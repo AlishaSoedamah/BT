@@ -1,0 +1,26 @@
+:root {
+	--background: rgb(255, 208, 0);
+	--text: #003082;
+	--text-two: #ffffff;
+	--btn: #0063d3;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	color: var(--text);
+}
+
+input {
+	padding: 10px;
+	border: none;
+	border-radius: calc(5px / 2);
+}
+
+.next-btn {
+	background-color: var(--btn);
+	color: var(--text-two);
+	&:hover {
+		cursor: pointer;
+	}
+}
