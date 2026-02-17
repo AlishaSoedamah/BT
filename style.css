@@ -1,21 +1,43 @@
 :root {
-	--background: rgb(255, 208, 0);
-	--text: #003082;
-	--text-two: #ffffff;
+	--ns-yellow: rgb(255, 208, 0);
+	--ns-blue: #003082;
+	--white: #ffffff;
 	--btn: #0063d3;
 	--transparent-blue: #0062d355;
+	--invalid: red;
 }
 
 * {
 	margin: 0;
 	box-sizing: border-box;
-	color: var(--text);
+	color: var(--ns-blue);
+}
+
+header {
+	text-align: center;
+	color: var(--white);
+	background-color: var(--ns-blue);
+}
+
+h1 {
+	text-align: center;
+	margin: 15px 0;
 }
 
 body {
 	font-family: sans-serif, arial;
-	background-color: var(--background);
+	background-color: var(--ns-yellow);
 }
+
+input {
+	margin: 15px 0;
+}
+
+
+:user-invalid {
+	background-color: red;
+}
+
 
 label {
 	display: block;
@@ -23,7 +45,7 @@ label {
 
 fieldset {
 	margin: 0 auto;
-	background-color: var(--text-two);
+	background-color: var(--white);
 }
 
 input {
@@ -34,7 +56,7 @@ input {
 
 .next-btn {
 	background-color: var(--btn);
-	color: var(--text-two);
+	color: var(--white);
 	&:hover {
 		cursor: pointer;
 	}

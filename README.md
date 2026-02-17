@@ -4,7 +4,7 @@
 
 <b>Wat heb ik vandaag gedaan?</b>
 Basis html opgezet, ingelezen over de opdracht.
-
+checkout met Patoune
 <b>Hoeveel tijd heeft me dat gekost?</b>
 6 uur + alle uitleg van Vasilis
 
@@ -15,11 +15,26 @@ Nog niet zo veel
 Naar de les!
 
 ### dag 2
+
+Workshop Vasilis
+POST in method attribute 
+GET antwoorden komen in de URL 
+fieldset = data die gegroepeerd is in een form. Een fieldset moet altijd een legend hebben.
+Een label is interactief, een label is altijd gekoppeld aan een input.
+:invalid, :user-invalid :user-valid voor input feedback
+
+geen checkout want ik ben ziek
 <b>Wat heb ik vandaag gedaan?</b>
-
-
+Ochtend quiz gevolgd en de workshop van Vasilis gedaan
 <b>Hoeveel tijd heeft me dat gekost?</b>
+2 uur
 
 <b>Wat heb ik geleerd?</b>
+input validation in css
 
 <b>Wat ga ik morgen doen?</b>
+niets aan dit vak
+
+## week 2
+## week 3
+## week 4 final
