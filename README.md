@@ -1,5 +1,4 @@
 # BT
-## week 1 
 ### dag 1
 
 <b>Wat heb ik vandaag gedaan?</b>
@@ -33,8 +32,19 @@ Ochtend quiz gevolgd en de workshop van Vasilis gedaan
 input validation in css
 
 <b>Wat ga ik morgen doen?</b>
-niets aan dit vak
+het ander vak
 
+## week 1 
+Voortgang besproken
+
+Dingen die we hebben besproken
+- autocomplete attribute
+- de css :has selector kan velden ook makkelijk verbergen ipv javascript te gebruiken
+- input validation pattern="[0-9]{6}"
+- ```border: none; border-top: 3em solid white;```
+- kijk meer naar input[type='radio'] input[type='text'] voor styling
+
+kijken naar input validation en patterns na de vakantie 
 ## week 2
 ## week 3
 ## week 4 final
