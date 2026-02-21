@@ -15,12 +15,17 @@ Naar de les!
 
 ### dag 2
 
-Workshop Vasilis
-POST in method attribute 
-GET antwoorden komen in de URL 
-fieldset = data die gegroepeerd is in een form. Een fieldset moet altijd een legend hebben.
-Een label is interactief, een label is altijd gekoppeld aan een input.
-:invalid, :user-invalid :user-valid voor input feedback
+#### Workshop Vasilis
+Belangrijkste dingen/punten uit de presentatie:
+- POST/GET method attribute 
+- GET antwoorden komen in de URL 
+- ```<fieldset>``` = data die gegroepeerd is in een form. 
+- Een ```<fieldset>``` moet altijd een ```legend``` hebben.
+- Een label is interactief, een label is altijd gekoppeld aan een input
+
+##### :invalid en :valid vs :user-invalid en :user-valid 
+user-valid/invalid laten pas de styling zien nadat de gebruiker weg gaat van het input veld ,
+met invalid/valid zie je de styling voordat je iets in de input zet
 
 geen checkout want ik ben ziek
 <b>Wat heb ik vandaag gedaan?</b>
@@ -37,12 +42,12 @@ het ander vak
 ## week 1 
 Voortgang besproken
 
-Dingen die we hebben besproken
+Dingen die we hebben besproken:
 - autocomplete attribute
 - de css :has selector kan velden ook makkelijk verbergen ipv javascript te gebruiken
-- input validation pattern="[0-9]{6}"
-- ```border: none; border-top: 3em solid white;```
-- kijk meer naar input[type='radio'] input[type='text'] voor styling
+- input validation pattern="[0-9]{6}" voor wat je wel en niet in de input wilt hebben
+- ```border: none; border-top: 3em solid white;``` voor de styling van legend zodat ie niet door de border heen staat
+- Kijk meer naar input[type='radio'] input[type='text'] voor styling zodat je geen extra classes hoeft te gebruiken
 
 kijken naar input validation en patterns na de vakantie 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled
