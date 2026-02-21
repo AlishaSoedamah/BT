@@ -45,6 +45,10 @@ Dingen die we hebben besproken
 - kijk meer naar input[type='radio'] input[type='text'] voor styling
 
 kijken naar input validation en patterns na de vakantie 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled
+https://www.wufoo.com/html5/disabled-attribute/#:~:text=The%20disabled%20attribute%20makes%20the,descendent%20form%20controls%20are%20disabled.
+
+
 ## week 2
 ## week 3
 ## week 4 final

@@ -13,7 +13,7 @@
 		<form>
 			<fieldset>
 				<legend>1 Gegevens van de overledene</legend>
-				<label for="naam">Naam</label>
+				<label for="naam">Voorletter(s)</label>
 				<input type="text" id="naam" name="naam">
 				<label for="tussen">Tussenvoegsel(s)</label>
 				<input type="text" id="tussen" name="tussen">
@@ -24,26 +24,26 @@
 				<label for="death">Overlijdensdatum</label>
 				<input type="date" id="death" name="death">
 				<input type="submit" value="Volgende" class="next-btn">
-			</fieldset>
-			<fieldset>
 				<legend>1 Gegevens van de overledene</legend>
 				<p>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</p>
-				<label>Ja
-					<input type="radio" name="ja">
+				<label>
+					Ja
+					<input type="radio" name="overledene" value="ja">
 				</label>
-				<label>Nee
-					<input type="radio"  name="nee">
+				<label>
+					Nee
+					<input type="radio"  name="overledene" value="nee">
 				</label>
 				<p>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</p>
-				<label for="notariële-akte">Ja. Stuur een kopie van de akte mee met de aangifte.</label>
-				<input type="radio" name="ja">
-				<label for="notariële-akte">Nee. Ga verder met vraag 1c.</label>
-				<input type="radio" name="nee">
+				<label>Ja. Stuur een kopie van de akte mee met de aangifte.</label>
+				<input type="radio" name="notariële-akte">
+				<label>Nee. Ga verder met vraag 1c.</label>
+				<input type="radio" name="notariële-akte">
 				<p>Hadden de overledene en diens partner een finaal verrekenbeding?</p>
 				<label for="finaal-verrekenbedin">Ja</label>
-				<input type="radio" name="ja">
+				<input type="radio" name="finaal-verrekenbedin" value="ja">
 				<label for="finaal-verrekenbedin">Nee</label>
-				<input type="radio"  name="nee">
+				<input type="radio"  name="finaal-verrekenbedin" value="nee">
 				<p>Datum huwelijkse of partnerschapsvoorwaarden</p>
 				<label for="datum-huwelijk">Datum</label>
 				<input type="date" id="datum-huwelijk" name="datum-huwelijk">
@@ -51,28 +51,26 @@
 			</fieldset>
 			<fieldset>
 				<legend>1 Gegevens van de overledene</legend>
-				<label for="kinderen">Had de overledene kinderen?</label>
+				<p>Had de overledene kinderen?</p>
 				<label for="kinderen">Ja</label>
-				<input type="radio" id="kinderen" name="ja">
+				<input type="radio" name="kinderen">
 				<label for="kinderen">Nee. Ga verder met vraag 1d.</label>
-				<input type="radio" name="nee">
+				<input type="radio" name="kinderen">
 				<p>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</p>
 				<label for="kinderen-overleden">Ja</label>
-				<input type="radio" name="ja">
+				<input type="radio" name="kinderen-overleden">
 				<label for="kinderen-overleden">Nee. Ga verder met vraag 1d.</label>
-				<input type="radio" name="nee">
+				<input type="radio" name="kinderen-overleden">
 				<input type="submit" value="Volgende" class="next-btn">
-			</fieldset>
-			<fieldset>
 				<legend>1 Gegevens van de overledene</legend>
 				<p>Had de overledene een testament?</p>
-				<label>Ja</label>
-				<input type="radio" name="ja">
-				<label for="">Nee</label>
-				<input type="radio" name="nee">
+				<label for="overledene-testament">Ja</label>
+				<input type="radio" name="overledene-testament">
+				<label for="overledene-testament">Nee</label>
+				<input type="radio" name="overledene-testament">
 				<label for="protocolnummer">Protocolnummer notaris</label>
 				<input type="text">
-				<label for="protocolnummer">Naam</label>
+				<label for="protocolnummer">Voorletter(s)</label>
 				<input type="text" id="protocolnummer" name="naam">
 				<label for="protocolnummer">Tussenvoegsel(s)</label>
 				<input type="text" id="tussen" name="tussen">

@@ -33,6 +33,11 @@ input {
 	margin: 15px 0;
 }
 
+input[type='radio']
+{
+	display: inline;
+}
+
 
 :user-invalid {
 	background-color: red;
