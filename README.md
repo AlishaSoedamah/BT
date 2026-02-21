@@ -4,6 +4,7 @@
 <b>Wat heb ik vandaag gedaan?</b>
 Basis html opgezet, ingelezen over de opdracht.
 checkout met Patoune
+
 <b>Hoeveel tijd heeft me dat gekost?</b>
 6 uur + alle uitleg van Vasilis
 
@@ -27,9 +28,9 @@ Belangrijkste dingen/punten uit de presentatie:
 user-valid/invalid laten pas de styling zien nadat de gebruiker weg gaat van het input veld ,
 met invalid/valid zie je de styling voordat je iets in de input zet
 
-geen checkout want ik ben ziek
 <b>Wat heb ik vandaag gedaan?</b>
 Ochtend quiz gevolgd en de workshop van Vasilis gedaan
+
 <b>Hoeveel tijd heeft me dat gekost?</b>
 2 uur
 
@@ -40,7 +41,8 @@ input validation in css
 het ander vak
 
 ## week 1 
-Voortgang besproken
+### Voortgang 19.02.2026
+Ik ben nu nog bezig met data organiseren en groeperen op de pagina zodat het een logishe flow heeft. Ik wil dat je in een paar stappen door het formulier heen kan navigeren zonder dat het irritant wordt. 
 
 Dingen die we hebben besproken:
 - autocomplete attribute
