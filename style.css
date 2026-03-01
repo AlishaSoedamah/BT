@@ -5,6 +5,7 @@
 	--btn: #0063d3;
 	--transparent-blue: #0062d355;
 	--invalid: red;
+	--valid:  rgb(47, 201, 0);
 }
 
 * {
@@ -38,15 +39,23 @@ input[type='radio']
 	display: inline;
 }
 
-
 :user-invalid {
-	background-color: red;
+	border-bottom: 2px solid var(--invalid);
 }
 
+:user-valid {
+	border-bottom: 2px solid var(--valid);
+}
 
 label {
 	display: block;
 }
+
+label::after {
+	content: "*";
+	color: solid var(--invalid);
+}
+
 
 fieldset {
 	margin: 0 auto;

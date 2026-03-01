@@ -14,15 +14,15 @@
 			<fieldset>
 				<legend>1 Gegevens van de overledene</legend>
 				<label for="naam">Voorletter(s)</label>
-				<input type="text" id="naam" name="naam">
+				<input required type="text" id="naam" name="naam">
 				<label for="tussen">Tussenvoegsel(s)</label>
 				<input type="text" id="tussen" name="tussen">
 				<label for="achternaam">Achternaam</label>
-				<input type="text" id="achternaam" name="achternaam">
+				<input required type="text" id="achternaam" name="achternaam">
 				<label for="bsn">Bsn overledene</label>
-				<input required type="number" maxlength="9" minlength="9" id="bsn" name="bsn">
+				<input required required type="number" maxlength="9" minlength="9" id="bsn" name="bsn">
 				<label for="death">Overlijdensdatum</label>
-				<input type="date" id="death" name="death">
+				<input required type="date" id="death" name="death">
 				<input type="submit" value="Volgende" class="next-btn">
 				<legend>1 Gegevens van de overledene</legend>
 				<p>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</p>
