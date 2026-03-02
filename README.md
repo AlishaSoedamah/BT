@@ -1,6 +1,7 @@
 # BT
+## week 1
 ### dag 1
-
+#### 16.02.2026
 <b>Wat heb ik vandaag gedaan?</b>
 Basis html opgezet, ingelezen over de opdracht.
 checkout met Patoune
@@ -15,7 +16,7 @@ Nog niet zo veel
 Naar de les!
 
 ### dag 2
-
+#### 17.02.2026
 #### Workshop Vasilis
 Belangrijkste dingen/punten uit de presentatie:
 - POST/GET method attribute 
@@ -40,8 +41,10 @@ input validation in css
 <b>Wat ga ik morgen doen?</b>
 het ander vak
 
-## week 1 
-### Voortgang 19.02.2026
+## week 1 voortgang
+<details>
+<summary>Voortgang 19.02.2026</summary>
+
 Ik ben nu nog bezig met data organiseren en groeperen op de pagina zodat het een logishe flow heeft. Ik wil dat je in een paar stappen door het formulier heen kan navigeren zonder dat het irritant wordt. 
 
 Dingen die we hebben besproken:
@@ -56,10 +59,44 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled
 https://www.wufoo.com/html5/disabled-attribute/#:~:text=The%20disabled%20attribute%20makes%20the,descendent%20form%20controls%20are%20disabled.
 
 
+</details>
+
 ## week 2
 
+### dag 3
+#### 02.03.2026
+In een fieldset kunnen meerdere fieldsets met legends zitten, dit is nice
+
+### dag 4
+#### 03.03.2026
+
+## week 2 voortgang
+<details>
+<summary>Voortgang 06.03.2026</summary>
+</details>
+
 ## week 3
-## week 4 final
+
+### dag 5
+#### 09.03.2026
+In een fieldset kunnen meerdere fieldsets met legends zitten, dit is nice
+
+### dag 6
+#### 10.03.2026
+
+## week 3 voortgang
+<details>
+<summary>Voortgang 13.03.2026</summary>
+</details>
+
+## week 4
+
+### dag 7
+#### 16.03.2026
+
+### dag 8
+#### 17.03.2026
+
 
 ## bronnen
 [:user-valid](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled
