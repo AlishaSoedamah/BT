@@ -65,7 +65,21 @@ https://www.wufoo.com/html5/disabled-attribute/#:~:text=The%20disabled%20attribu
 
 ### dag 3
 #### 02.03.2026
-In een fieldset kunnen meerdere fieldsets met legends zitten, dit is nice
+
+<b>Wat heb ik vandaag gedaan?</b>
+Herstructurering van de HTML op de site en beter nagedacht over de UX van de website
+
+<b>Hoeveel tijd heeft me dat gekost?</b>
+2 uur? 3 uur?
+
+<b>Wat heb ik geleerd?</b>
+Dat je een fieldset meerdere fieldsets kunt zetten zolang er een legend in zit.
+
+<b>Wat ga ik morgen doen?</b>
+- Aan dit vak zitten 
+- Meer aan de styling zitten van de website
+- De workshop van Vasilis doen
+- De weekly geek doen in de ochtend
 
 ### dag 4
 #### 03.03.2026
