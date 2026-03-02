@@ -30,6 +30,14 @@ body {
 	background-color: var(--ns-yellow);
 }
 
+/* form */
+
+form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
 input {
 	margin: 15px 0;
 }
@@ -51,14 +59,13 @@ label {
 	display: block;
 }
 
-label::after {
-	content: "*";
-	color: solid var(--invalid);
+input:required + label::after {
+    content: "*";
+    color: var(--invalid);
 }
 
-
 fieldset {
-	margin: 0 auto;
+	border: none; border-top: 2em solid white;
 	background-color: var(--white);
 }
 
@@ -68,7 +75,7 @@ input {
 	border-radius: calc(5px / 2);
 }
 
-.next-btn {
+input[type='submit'] {
 	background-color: var(--btn);
 	color: var(--white);
 	&:hover {

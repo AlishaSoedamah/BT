@@ -57,5 +57,11 @@ https://www.wufoo.com/html5/disabled-attribute/#:~:text=The%20disabled%20attribu
 
 
 ## week 2
+
 ## week 3
 ## week 4 final
+
+## bronnen
+[:user-valid](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled
+https://www.wufoo.com/html5/disabled-attribute/#:~:text=The%20disabled%20attribute%20makes%20the,descendent%20form%20controls%20are%20disabled.)
+[:user-invalid](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid)
