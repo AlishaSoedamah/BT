@@ -20,7 +20,7 @@ Naar de les!
 #### Workshop Vasilis
 Belangrijkste dingen/punten uit de presentatie:
 - POST/GET method attribute 
-- GET antwoorden komen in de URL 
+- GET antwoorden komen in de URL
 - ```<fieldset>``` = data die gegroepeerd is in een form. 
 - Een ```<fieldset>``` moet altijd een ```legend``` hebben.
 - Een label is interactief, een label is altijd gekoppeld aan een input
@@ -81,7 +81,7 @@ Dat je een fieldset meerdere fieldsets kunt zetten zolang er een legend in zit.
 
 ### dag 4
 #### 03.03.2026
-Voor de Weekly Geek van vandaag moesten we de UX van HTML elementen onderzoeken en om een element na te maken met divs en spans.
+Voor de Weekly Geek van vandaag moesten we de UX van de HTML tag anchor onderzoeken en dit element namaken met divs en spans.
 
 WEL
 - Focus werkt
@@ -92,6 +92,9 @@ NIET
 - Copy link address werkt niet 
 - Als je over de echte ```<a>``` hovered dan kan je de link rechtsonder zien
 - Betere SEO met ```<a href>```
+
+Het probleem met dit en de echte ```<a>``` tag is dat de Anchor wel door screenreaders wordt gelezen en de span genegeerd wordt als je door de pagina heen gaat.
+
 Mijn element was de ```<a>``` tag, dit is de code:
 
 ```
@@ -113,11 +116,31 @@ Mijn element was de ```<a>``` tag, dit is de code:
 		color: red;
 	}
 ```
-Het probleem met dit en de echte ```<a>``` tag is dat de Anchor wel door screenreaders wordt gelezen en de span genegeerd wordt als je door de pagina heen gaat.
 
 [:visited](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:visited)
 [window.location](https://stackoverflow.com/questions/24062334/onclick-window-location-trying-to-change-to-open-link-in-new-tab)
 [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:active)
+
+### Workshop Victor
+in JS:
+- == checked een value
+- === checked ook een value maar is stricter
+- event.target.setCustomValidity("Nieuwe tekst");
+- form.reportValidity met EventListener('blur')
+- .setCustomValidity(""); is een reset
+- [area-describedby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby)
+Je kunt JS gebruiken voor validatie die je niet kunt maken in HMTL en CSS.
+
+#### Checkout
+
+<b>Wat heb ik vandaag gedaan?</b>
+Meer aan de opmaak gedaan van de site. Ik moet nog werken aan: de vragen disabled maken, legends die bij inputs horen kleiner maken. Tijdens de checkout heeft Thomas mijn probleem met de required vragen gefixt: ```label:has(+ input:required)::after ```
+
+<b>Hoeveel tijd heeft me dat gekost?</b>
+4/5 uur
+
+<b>Wat heb ik geleerd?</b>
+Met reportValidity kan je een custom message geven aan een bestaande error. Je kan de styling van een bestaande error niet veranderen maar wel de content in de error.
 
 ## week 2 voortgang
 <details>

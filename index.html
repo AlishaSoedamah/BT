@@ -8,10 +8,12 @@
 </head>
 <body>
 	<header>Dit is een school opdracht</header>
-	<h1>Aangifte erfbelasting</h1>
 	<main>
+		<section>
+			<h1>Aangifte erfbelasting 2026</h1>
+			<img src="trein.jpg" alt="trein">
+		</section>
 		<form>
-			<!-- start 1 -->
 			<fieldset>
 				<legend>Gegevens van de overledene</legend>
 				<label for="ov-naam">Voorletter(s)</label>
@@ -19,15 +21,19 @@
 				<label for="ov-tussen">Tussenvoegsel(s)</label>
 				<input type="text" id="ov-tussen" name="tussen">
 				<label for="ov-achternaam">Achternaam</label>
-				<input required type="text" id="ov-achternaam" name="achternaam">
-				<label for="bsn">Bsn overledene</label>
-				<input required type="number" id="bsn" name="bsn">
+				<input required type="text" id="ov-achternaam" name="ov-achternaam">
+				<label>
+					Bsn overledene
+					<input required name="bsn1" type="number"> 
+					<input required name="bsn2" type="number">
+					<input required type="number">
+				</label>
 				<label for="death">Overlijdensdatum</label>
 				<input required type="date" id="death" name="death">
 				<input type="submit" value="Volgende" class="next-btn">
 			</fieldset>
 			<fieldset>
-				<legend>Partnerschap van de overledene</legend>
+				<legend>Partnerschap overledene</legend>
 				
 				
 
@@ -47,20 +53,22 @@
 
 				<fieldset>
 					<legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
-					<label>Ja. Stuur een kopie van de akte mee met de aangifte.</label>
-					<input type="radio" name="notariële-akte">
-					<label>Nee. Ga verder met vraag 1c.</label>
-					<input type="radio" name="notariële-akte">
+					<label>Ja. Stuur een kopie van de akte mee met de aangifte.
+						<input type="radio" name="notariële-akte">
+					</label>
+					<label>Nee. Ga verder met vraag 1c.
+						<input type="radio" name="notariële-akte">
+					</label>
 				</fieldset>
 
 
-				
+			
 				<fieldset>
 					<legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
 					<label>Ja
 						<input type="radio" name="finaal-verrekenbedin" value="finaal-verrekenbedin-ja">
 					</label>
-					<label for="finaal-verrekenbedin">Nee
+					<label>Nee
 						<input type="radio" name="finaal-verrekenbedin" value="finaal-verrekenbedin-nee">
 					</label>
 				</fieldset>
@@ -75,7 +83,7 @@
 			<!-- end 1 -->
 			<!-- start 2 -->
 			<fieldset>
-				<legend>1 Gegevens van de overledene</legend>
+				<legend>Kinderen van de overledene</legend>
 
 
 
@@ -91,6 +99,7 @@
 				</fieldset>
 
 
+
 				<fieldset>
 					<legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
 					<label>Ja
@@ -103,7 +112,7 @@
 				<!-- <input type="submit" value="Volgende"> -->
 			</fieldset>
 			<fieldset>
-				<legend>Gegevens van de overledene</legend>
+				<legend>Testament</legend>
 
 
 
@@ -152,5 +161,14 @@
 
 		</form>
 	</main>
+	<footer>
+		<b>Over</b>
+		<ul>
+			<li>Minor</li>
+			<li>Webdesign</li>
+			<li>Development</li>
+			<li>Alisha</li>
+		</ul>
+	</footer>
 </body>
 </html>

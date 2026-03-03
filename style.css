@@ -1,8 +1,9 @@
 :root {
-	--ns-yellow: #F7CA4A;
+	--ns-yellow: #ffc917;
 	--ns-blue: #102F7D;
+	--grey-bg: #E6E6E8;
 	--white: #ffffff;
-	--btn: #2961CB;
+	--btn: #0063d3;
 	--transparent-blue: #0062d355;
 	--invalid: red;
 	--valid:  rgb(47, 201, 0);
@@ -23,20 +24,50 @@ header {
 h1 {
 	text-align: center;
 	margin: 15px 0;
+	font-weight: 100;
+	font-size: 2em;
 }
 
 body {
-	font-family: sans-serif, arial;
+	background-color: var(--grey-bg);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif, arial;
+}
+
+section {
+	position: relative;
 	background-color: var(--ns-yellow);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 250px;
+}
+
+img {
+	position: absolute;
+	top: 225px;
+	width: 95%;
+	height: 250px;
+    object-fit: cover;
 }
 
 /* form */
-
 form {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+}
+
+label {
+	display: block;
+	margin: 15px 0;
+}
+
+legend {
+	font-size: 1.5em;
 }
 
 :user-invalid {
@@ -47,24 +78,25 @@ form {
 	border-bottom: 2px solid var(--valid);
 }
 
-/* label {
-	display: block;
-} */
-
-input:required + label::after {
+label:has(+ input:required)::after {
     content: "*";
     color: var(--invalid);
 }
 
 fieldset {
-	border: none; border-top: 2em solid white;
+	border: none;
+	border-top: 2em solid white;
 	background-color: var(--white);
-	width: 50%;
+	margin: 10px;
 }
+
+/* fieldset:nth-child(1)
+{
+	background: hotpink;
+} */
 
 
 /* input */
-
 input {
 	padding: 10px;
 	border: 1px solid var(--transparent-blue);
@@ -83,4 +115,26 @@ input[type='radio']
 {
 	display: inline;
 	padding: 20px;
+}
+
+footer {
+	background-color: var(--white);
+	color: var(--btn);
+}
+
+ul li {
+	color: var(--btn);
+	list-style: none;
+}
+
+@media (min-width: 700px) {
+	section {
+		margin-bottom: 380px;
+	}
+
+	img {
+		top: 190px;
+		width: 70%;
+		height: 350px;
+	}
 }
