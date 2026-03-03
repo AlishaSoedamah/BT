@@ -91,8 +91,7 @@ NIET
 - :visited werkt niet
 - Copy link address werkt niet 
 - Als je over de echte ```<a>``` hovered dan kan je de link rechtsonder zien
-- Seo vertrouwd op ```<a href>```
-- 
+- Betere SEO met ```<a href>```
 Mijn element was de ```<a>``` tag, dit is de code:
 
 ```
