@@ -54,9 +54,7 @@ Dingen die we hebben besproken:
 - ```border: none; border-top: 3em solid white;``` voor de styling van legend zodat ie niet door de border heen staat
 - Kijk meer naar input[type='radio'] input[type='text'] voor styling zodat je geen extra classes hoeft te gebruiken
 
-kijken naar input validation en patterns na de vakantie 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled
-https://www.wufoo.com/html5/disabled-attribute/#:~:text=The%20disabled%20attribute%20makes%20the,descendent%20form%20controls%20are%20disabled.
+We gaan kijken naar input validation en patterns na de vakantie [disabled](https://www.wufoo.com/html5/disabled-attribute/#:~:text=The%20disabled%20attribute%20makes%20the,descendent%20form%20controls%20are%20disabled)
 
 
 </details>
@@ -109,7 +107,7 @@ Het probleem met dit en de echte ```<a>``` tag is dat de Anchor wel door screenr
 
 [:visited](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:visited)
 [window.location](https://stackoverflow.com/questions/24062334/onclick-window-location-trying-to-change-to-open-link-in-new-tab)
-[:active]
+[:active](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:active)
 
 ## week 2 voortgang
 <details>
@@ -140,6 +138,5 @@ In een fieldset kunnen meerdere fieldsets met legends zitten, dit is nice
 
 
 ## bronnen
-[:user-valid](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled
-https://www.wufoo.com/html5/disabled-attribute/#:~:text=The%20disabled%20attribute%20makes%20the,descendent%20form%20controls%20are%20disabled.)
+[:user-valid](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-valid)
 [:user-invalid](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid)
