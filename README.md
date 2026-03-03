@@ -30,7 +30,7 @@ user-valid/invalid laten pas de styling zien nadat de gebruiker weg gaat van het
 met invalid/valid zie je de styling voordat je iets in de input zet
 
 <b>Wat heb ik vandaag gedaan?</b>
-Ochtend quiz gevolgd en de workshop van Vasilis gedaan
+Ochtend quiz gevolgd over Tahoe icons (weekly geek) en de workshop van Vasilis gedaan.
 
 <b>Hoeveel tijd heeft me dat gekost?</b>
 2 uur
@@ -83,6 +83,33 @@ Dat je een fieldset meerdere fieldsets kunt zetten zolang er een legend in zit.
 
 ### dag 4
 #### 03.03.2026
+Voor de Weekly Geek van vandaag moesten we de UX van HTML elementen onderzoeken en om een element na te maken met divs en spans.
+Mijn element was de ```<a>``` tag, dit is de code:
+
+```
+	<span onclick="window.location='https://google.com'">mine</span>
+	<a href="https://google.com">real</a>
+
+	span {
+		color: blue;
+		 text-decoration: underline;
+		&:hover {
+			cursor: pointer;
+		}
+		&:visited {
+		color:  rgb(51, 0, 255);
+		text-decoration-color: rgb(51, 0, 255);
+		}
+	}
+	:active {
+		color: red;
+	}
+```
+Het probleem met dit en de echte ```<a>``` tag is dat de Anchor wel door screenreaders wordt gelezen en de span genegeerd wordt als je door de pagina heen gaat.
+
+[:visited](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:visited)
+[window.location](https://stackoverflow.com/questions/24062334/onclick-window-location-trying-to-change-to-open-link-in-new-tab)
+[:active]
 
 ## week 2 voortgang
 <details>
