@@ -82,6 +82,17 @@ Dat je een fieldset meerdere fieldsets kunt zetten zolang er een legend in zit.
 ### dag 4
 #### 03.03.2026
 Voor de Weekly Geek van vandaag moesten we de UX van HTML elementen onderzoeken en om een element na te maken met divs en spans.
+
+WEL
+- Focus werkt
+- Enter werkt 
+
+NIET
+- :visited werkt niet
+- Copy link address werkt niet 
+- Als je over de echte ```<a>``` hovered dan kan je de link rechtsonder zien
+- Seo vertrouwd op ```<a href>```
+- 
 Mijn element was de ```<a>``` tag, dit is de code:
 
 ```
