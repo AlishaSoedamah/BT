@@ -22,14 +22,10 @@
 				<input type="text" id="ov-tussen" name="tussen">
 				<label for="ov-achternaam">Achternaam</label>
 				<input required type="text" id="ov-achternaam" name="ov-achternaam">
-				<label>
-					Bsn overledene
-					<input required name="bsn1" type="number"> 
-					<input required name="bsn2" type="number">
-					<input required type="number">
-				</label>
-				<label for="death">Overlijdensdatum</label>
-				<input required type="date" id="death" name="death">
+				<label>Bsn overledene</label>
+				<input required name="bsn1" type="number"> 
+				<label for="death-date">Overlijdensdatum</label>
+				<input required type="date" id="death" name="death-date">
 				<input type="submit" value="Volgende" class="next-btn">
 			</fieldset>
 			<fieldset>
@@ -128,17 +124,17 @@
 
 				<fieldset>
 					<label for="protocolnummer">Protocolnummer notaris</label>
-					<input type="text">
+					<input required type="text">
 					<label for="protocolnummer">Voorletter(s)</label>
-					<input type="text" id="protocolnummer" name="naam">
+					<input required type="text" id="protocolnummer" name="naam">
 					<label for="protocolnummer">Tussenvoegsel(s)</label>
-					<input type="text" id="erf1-tussen" name="tussen">
+					<input required type="text" id="erf1-tussen" name="tussen">
 					<label for="protocolnummer">Achternaam</label>
-					<input type="text" id="achternaam" name="achternaam">
+					<input required type="text" id="achternaam" name="achternaam">
 					<label>Vestigingsplaats</label>
-					<input type="text">
+					<input required type="text">
 					<label for="testament-datum">Datum van het testament of van de laatste wijziging</label>
-					<input type="date" id="testament-datum">
+					<input required type="date" id="testament-datum">
 				</fieldset>
 
 
@@ -149,11 +145,11 @@
 			<fieldset>
 				<legend>Gegevens gemachtigde</legend>
 				<label>Bsn/RSIN gemachtigde</label>
-				<input type="number">
+				<input required type="number" name="bsn">
 				<label>Beconnummer adviseur</label>
-				<input type="number">
+				<input required type="number">
 				<label>Beconnummer adviseur</label>
-				<input type="number">
+				<input required type="number" name="Beconnummer">
 				<!-- <input type="submit" value="Volgende"> -->
 			</fieldset>
 			<!-- end 3 -->
@@ -170,5 +166,6 @@
 			<li>Alisha</li>
 		</ul>
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>

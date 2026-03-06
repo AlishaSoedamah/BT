@@ -84,12 +84,22 @@ label:has(+ input:required)::after {
 }
 
 fieldset {
+	width: 90%;
 	border: none;
 	border-top: 2em solid white;
 	background-color: var(--white);
 	margin: 10px;
+	padding: 25px;
 }
 
+fieldset > fieldset > legend {
+	font-size: 16px;
+}
+
+fieldset > fieldset {
+	padding: 0;
+	margin: 0;
+}
 /* fieldset:nth-child(1)
 {
 	background: hotpink;
@@ -127,7 +137,7 @@ ul li {
 	list-style: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
 	section {
 		margin-bottom: 380px;
 	}
@@ -136,5 +146,13 @@ ul li {
 		top: 190px;
 		width: 70%;
 		height: 350px;
+	}
+
+	fieldset {
+		width: 50%;
+	}
+
+	fieldset > fieldset {
+		width: 100%;
 	}
 }

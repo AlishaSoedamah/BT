@@ -145,6 +145,11 @@ Met reportValidity kan je een custom message geven aan een bestaande error. Je k
 ## week 2 voortgang
 <details>
 <summary>Voortgang 06.03.2026</summary>
+- Denk meer aan de ux van je form -> bsn niet in 3 inputs maar 1, je mag de styling van de input wel zo maken als in de pdf
+- de form over meerdere pagina's verspreiden is ook ok
+- werk meer aan de styling van de site
+- style voor radio buttons moet nog gebeuren
+
 </details>
 
 ## week 3
