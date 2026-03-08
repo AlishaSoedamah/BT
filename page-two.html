@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aangifte erfbelasting 2026</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>Dit is een school opdracht</header>
+	<main>
+		<section>
+			<h1>Aangifte erfbelasting 2026</h1>
+			<img src="trein.jpg" alt="trein">
+		</section>
+		<form>
+				<fieldset>
+					<legend>Had de overledene kinderen?</legend>
+					<label>
+						Ja
+						<input type="radio" name="kinderen" id="kinderen-ja">
+						<span class="checkmark"></span>
+					</label>
+					<label>Nee. Ga verder met vraag 1d.
+						<input type="radio" name="kinderen" id="kinderen-nee">
+						<span class="checkmark"></span>
+					</label>
+				</fieldset>
+
+
+				<fieldset>
+					<legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
+					<label>Ja
+						<input type="radio" name="kinderen-overleden" id="kinderen-overleden-ja">
+						<span class="checkmark"></span>
+					</label>
+					<label>Nee. Ga verder met vraag 1d.
+						<input type="radio" name="kinderen-overleden" id="kinderen-overleden-nee">
+						<span class="checkmark"></span>
+					</label>
+				</fieldset>
+				<!-- <input type="submit" value="Volgende"> -->
+			</fieldset>
+			<fieldset>
+				<legend>Testament</legend>
+
+
+
+				<fieldset>
+					<legend>Had de overledene een testament?</legend>
+					<label for="overledene-testament-ja">Ja
+						<input type="radio" name="overledene-testament" id="overledene-testament-ja">
+						<span class="checkmark"></span>
+					</label>
+					
+					<label for="overledene-testament-nee">Nee
+						<input type="radio" name="overledene-testament" id="overledene-testament-nee">
+						<span class="checkmark"></span>
+					</label>
+				</fieldset>
+
+
+
+				<fieldset>
+					<label for="protocolnummer">Protocolnummer notaris</label>
+					<input required type="text">
+					<label for="protocolnummer">Voorletter(s)</label>
+					<input required type="text" id="protocolnummer" name="naam">
+					<label for="protocolnummer">Tussenvoegsel(s)</label>
+					<input required type="text" id="erf1-tussen" name="tussen">
+					<label for="protocolnummer">Achternaam</label>
+					<input required type="text" id="achternaam" name="achternaam">
+					<label>Vestigingsplaats</label>
+					<input required type="text">
+					<label for="testament-datum">Datum van het testament of van de laatste wijziging</label>
+					<input required type="date" id="testament-datum">
+				<input type="submit" value="Volgende">
+
+				</fieldset>
+			</fieldset>
+		
+
+		</form>
+	</main>
+	<footer>
+		<b>Over</b>
+		<ul>
+			<li>Minor</li>
+			<li>Webdesign</li>
+			<li>Development</li>
+			<li>Alisha</li>
+		</ul>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
