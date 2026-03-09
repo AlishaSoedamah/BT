@@ -142,6 +142,7 @@ form {
 	flex-direction: column;
 	background-color: var(--white);
 	margin: 0 0 40px 0;
+	padding: 0 20px;
 	width: 100%;
 }
 
@@ -175,9 +176,8 @@ div label:has(input:required)::after {
 }
 
 fieldset {
-	width: 90%;
+	width: 100%;
 	margin: 10px;
-	/* border-top: 1px solid gray; */
 	border: none;
 }
 
@@ -295,6 +295,7 @@ label .checkmark:after {
     height: 11px;
 	border-radius: 50%;
 	background: var(--radio-color);
+	animation: 0.1s --pop-in ease-in;
 }
 
 .three-col {
@@ -364,6 +365,27 @@ fieldset > fieldset legend::after {
   visibility: visible;
 }
 
+fieldset:has(#overledene-getrouwd-nee:checked) + .b,
+fieldset:has(#overledene-getrouwd-nee:checked) ~ .c,
+fieldset:has(#overledene-getrouwd-nee:checked) ~ .d {
+  display: none;
+}
+
+fieldset:has([value="notariële-akte-nee"]:checked) ~ .c,
+fieldset:has([value="notariële-akte-nee"]:checked) ~ .d
+{
+  display: none;
+}
+
+@keyframes --pop-in {
+	0% {
+		scale: 0.5;
+	}
+	100% {
+		scale: 1;
+	}
+}
+
 @media (min-width: 1000px) {
 	section {
 		margin-bottom: 380px;
@@ -377,6 +399,7 @@ fieldset > fieldset legend::after {
 
 	form {
 		width: 50%;
+		padding: 0 25px;
 	}
 
 	fieldset > fieldset {

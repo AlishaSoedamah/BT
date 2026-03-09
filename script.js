@@ -3,7 +3,6 @@ deathdate.max = new Date().toISOString().split('T')[0];
 const form = document.querySelector('form');
 const input = document.querySelector('input');
 const error = document.querySelector('.error');
-const errortwo = document.querySelector('.errortwo');
 
 form.setAttribute('novalidate', '');
 

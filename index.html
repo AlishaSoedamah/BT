@@ -74,22 +74,22 @@
 
 
 
-				<fieldset>
+				<fieldset class="b">
 					<legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
 					<label>Ja. Stuur een kopie van de akte mee met de aangifte.
-						<input type="radio" name="notariële-akte">
+						<input type="radio" name="notariële-akte" value="notariële-akte-ja">
 						<span class="checkmark"></span>
 					</label>
 					<input type="file"> 
-					<label>Nee. Ga verder met vraag 1c.
-						<input type="radio" name="notariële-akte">
+					<label>Nee
+						<input type="radio" name="notariële-akte" value="notariële-akte-nee">
 						<span class="checkmark"></span>
 					</label>
 				</fieldset>
 
 
 			
-				<fieldset>
+				<fieldset class="c">
 					<legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
 					<label>Ja
 						<input type="radio" name="finaal-verrekenbedin" value="finaal-verrekenbedin-ja">
@@ -101,15 +101,15 @@
 					</label>
 				</fieldset>
 
+				<fieldset class="d">
+					<legend>Datum</legend>
+					<label>Datum huwelijkse of partnerschapsvoorwaarden
+						<input type="date" name="datum-huwelijk">
+					</label>
+				</fieldset>
 
-
-				<label>Datum huwelijkse of partnerschapsvoorwaarden
-					<input type="date" name="datum-huwelijk">
-				</label>
 			</fieldset>
-				<input type="submit" value="Volgende" class="next-btn">
-
-
+			<input type="submit" value="Volgende" class="next-btn">
 		</form>
 	</main>
 	<footer>
