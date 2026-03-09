@@ -156,7 +156,45 @@ Met reportValidity kan je een custom message geven aan een bestaande error. Je k
 
 ### dag 5
 #### 09.03.2026
-In een fieldset kunnen meerdere fieldsets met legends zitten, dit is nice
+### Onderzoek naar de standaard van form validation
+ [Wat is de standaard voor errors op forms?](https://medium.com/@shanplourde/inline-form-validations-ux-design-considerations-and-react-examples-c2f53f89bebc)
+
+Belangrijkste punten:
+
+- Don't show an error when a user is still typing
+
+- Inline validations provide feedback early and often to end users, so they provide a significant usability benefit.
+
+- Positive inline validation removes some cognitive load from users since they don’t have to review and validate the form for errors before submitting it.
+
+
+
+[Examples](https://baymard.com/blog/inline-form-validation)
+> In testing, we’ve repeatedly observed that a better solution to error messaging that consistently improved the participants’ error-recovery experience was live inline validation.
+
+> Live inline validation is where the validity of the user’s input is checked immediately as the user types in the full value or leaves the field.
+
+> Because users are alerted to input issues immediately after typing, the amount of time needed to correct the error decreases significantly, as the input and its context are still fresh in the user’s mind.
+
+1. Avoid premature validation
+	Omdat het frustrerend is
+2. Remove error messages as soon as the field is corrected
+	Zodat je niet verward raakt als je de input wel goed invuld maar dat pas ziet als je op de submit knop klikt
+3. Use “positive inline validation” for all fields
+	Omdat dit confirmatie is dat er niets mis is gegaan
+
+
+
+<b>Wat heb ik vandaag gedaan?</b>
+Gast les van [Rijk van zanten](https://directus.io/team/rijk-van-zanten) in de ochtend. Hij heeft ook deze minor gedaan in 2017.
+
+Eindelijk meer gedaan aan de input validation en patterns. De standaard error uitgezet om mijn eigen custom error te gebruiken
+
+<b>Hoeveel tijd heeft me dat gekost?</b>
+5 uur
+
+<b>Wat heb ik geleerd?</b>
+De standaard van form validation en waarom de UX daarvan uitmaakt.
 
 ### dag 6
 #### 10.03.2026

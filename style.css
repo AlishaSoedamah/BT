@@ -5,8 +5,10 @@
 	--white: #ffffff;
 	--btn: #0063d3;
 	--transparent-blue: #0062d355;
+	--ns-border-form: #c4c5cb;
 	--invalid: red;
 	--valid:  rgb(47, 201, 0);
+	--radio-color: #05A887;
 }
 
 * {
@@ -16,9 +18,16 @@
 }
 
 header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
-	color: var(--white);
+	padding: 2px;
 	background-color: var(--ns-blue);
+}
+
+header > p {
+	color: var(--white);
 }
 
 h1 {
@@ -33,6 +42,63 @@ body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif, arial;
 }
 
+/* steps */
+ol {
+	margin: 0;
+	padding: 0;
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	border-top: 3px solid var(--btn);
+	width: 600px;
+}
+
+ol > li {
+	padding: 44px 0;
+	text-align: center;
+}
+
+ol > li::before {
+	content: "1";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	font-weight: 700;
+	bottom: 87px;
+}
+
+ol > li:nth-child(1)::before {
+	content: "1";
+	color: var(--white);
+	background-color: var(--btn);
+}
+
+ol > li:nth-child(2)::before {
+	content: "2";
+	color: var(--btn);
+	background-color: var(--white);
+	outline: 3px solid var(--btn);
+}
+
+ol > li:nth-child(3)::before {
+	content: "3";
+	color: var(--btn);
+	background-color: var(--white);
+	outline: 3px solid var(--btn);
+}
+
+ol > li:nth-child(4)::before {
+	content: "4";
+	color: var(--btn);
+	background-color: var(--white);
+	outline: 3px solid var(--btn);
+}
+
 section {
 	position: relative;
 	background-color: var(--ns-yellow);
@@ -45,7 +111,7 @@ section {
 	margin-bottom: 250px;
 }
 
-img {
+.hero {
 	position: absolute;
 	top: 225px;
 	width: 95%;
@@ -67,7 +133,8 @@ label {
 }
 
 legend {
-	font-size: 1.5em;
+	font-weight: 700;
+	font-size: 1.7rem;
 	padding-top: 30px;
 }
 
@@ -77,9 +144,14 @@ legend {
 
 :user-valid {
 	border-bottom: 2px solid var(--valid);
+	background-image: url(img/Green-check-mark.png);
+	background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
 }
 
-label:has(+ input:required)::after {
+label:has(+ input:required)::after,
+div > label:has(+ input:required)::after {
     content: "*";
     color: var(--invalid);
 }
@@ -94,6 +166,7 @@ fieldset {
 }
 
 fieldset > fieldset > legend {
+	font-weight: 200;
 	font-size: 16px;
 }
 
@@ -101,17 +174,12 @@ fieldset > fieldset {
 	padding: 0;
 	margin: 0;
 }
-/* fieldset:nth-child(1)
-{
-	background: hotpink;
-} */
-
 
 /* input */
 input {
-	padding: 10px;
-	border: 1px solid var(--transparent-blue);
-	border-radius: calc(5px / 2);
+	padding: 15px 20px;
+	border: 1px solid var(--ns-border-form);
+	border-radius: 6px;
 }
 
 input[type='submit'] {
@@ -148,11 +216,11 @@ footer {
 	background-color: var(--white);
 	color: var(--btn);
 }
-
+/* 
 ul li {
 	color: var(--btn);
 	list-style: none;
-}
+} */
 
 label:has(input[type='radio']) {
   display: block;
@@ -180,8 +248,9 @@ label input[type='radio'] {
   left: 0;
   height: 21px;
   width: 21px;
-  background-color: #eee;
+  background-color: var(--white);
   border-radius: 50%;
+  border: 1px solid gray;
 }
 
 /* On mouse-over, add a grey background color */
@@ -191,7 +260,8 @@ label:hover input ~ .checkmark {
 
 /* When the radio button is checked, add a blue background */
 label input:checked ~ .checkmark {
-  background-color: var(--btn);
+  background-color: var(--white);
+  border: 1px solid var(--radio-color);
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -208,20 +278,48 @@ label input:checked ~ .checkmark:after {
 
 /* Style the indicator (dot/circle) */
 label .checkmark:after {
- 	top: 8px;
-	left: 8px;
-	width: 5px;
-	height: 5px;
+ 	top: 4px;
+    left: 4px;
+    width: 11px;
+    height: 11px;
 	border-radius: 50%;
-	background: white;
+	background: var(--radio-color);
 }
 
-div {
-	display: flex;
+.three-col {
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
 }
 
 div label input {
 	margin: 10px 0;
+}
+
+.error {
+	color: red;
+}
+
+.alert {
+	z-index: 10;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	top: 0;
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  background-color: var(--btn);
+  color: white;
+  padding: 0.5em;
+  border-radius: 3px;
+  border: none;
+  font-weight: 100;
+}
+
+fieldset > fieldset legend::after {
+	content: "*";
+	color: var(--invalid);
 }
 
 @media (min-width: 1000px) {
@@ -229,7 +327,7 @@ div label input {
 		margin-bottom: 380px;
 	}
 
-	img {
+	.hero {
 		top: 190px;
 		width: 70%;
 		height: 350px;

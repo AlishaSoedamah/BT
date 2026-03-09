@@ -11,9 +11,12 @@
 	<main>
 		<section>
 			<h1>Aangifte erfbelasting 2026</h1>
-			<img src="trein.jpg" alt="trein">
+			<img src="img/trein.jpg" alt="trein">
 		</section>
 		<form>
+	
+			<fieldset>
+				<legend>Kinderen van de overledene</legend>
 				<fieldset>
 					<legend>Had de overledene kinderen?</legend>
 					<label>
@@ -39,29 +42,47 @@
 						<span class="checkmark"></span>
 					</label>
 				</fieldset>
-				<!-- <input type="submit" value="Volgende"> -->
-			</fieldset>
-			<fieldset>
-				<legend>Testament</legend>
-
-
-
+				
 				<fieldset>
-					<legend>Had de overledene een testament?</legend>
-					<label for="overledene-testament-ja">Ja
-						<input type="radio" name="overledene-testament" id="overledene-testament-ja">
+					<legend>Had dit overleden kind zelf kinderen?</legend>
+					<label>Ja
+						<input type="radio" name="kinderen-overleden-kinderen" id="kinderen-overleden-kinderen-ja">
 						<span class="checkmark"></span>
 					</label>
-					
-					<label for="overledene-testament-nee">Nee
-						<input type="radio" name="overledene-testament" id="overledene-testament-nee">
+					<label>Nee
+						<input type="radio" name="kinderen-overleden-kinderen" id="kinderen-overleden-kinderen-nee">
 						<span class="checkmark"></span>
 					</label>
 				</fieldset>
 
-
-
-				<fieldset>
+					<fieldset>
+					<legend>Had dit overleden kind zelf kinderen?</legend>
+					<label>Ja
+						<input type="radio" name="kinderen-overleden-kinderen" id="kinderen-overleden-kinderen-ja">
+						<span class="checkmark"></span>
+					</label>
+					<label>Nee
+						<input type="radio" name="kinderen-overleden-kinderen" id="kinderen-overleden-kinderen-nee">
+						<span class="checkmark"></span>
+					</label>
+				</fieldset>
+			</fieldset>
+	
+	
+			<fieldset>
+					<legend>Testament</legend>
+					<fieldset>
+						<legend>Had de overledene een testament?</legend>
+						<label for="overledene-testament-ja">Ja
+							<input type="radio" name="overledene-testament" id="overledene-testament-ja">
+							<span class="checkmark"></span>
+						</label>
+							
+						<label for="overledene-testament-nee">Nee
+							<input type="radio" name="overledene-testament" id="overledene-testament-nee">
+							<span class="checkmark"></span>
+						</label>
+					</fieldset>
 					<label for="protocolnummer">Protocolnummer notaris</label>
 					<input required type="text">
 					<label for="protocolnummer">Voorletter(s)</label>
@@ -76,9 +97,7 @@
 					<input required type="date" id="testament-datum">
 				<input type="submit" value="Volgende">
 
-				</fieldset>
 			</fieldset>
-		
 
 		</form>
 	</main>

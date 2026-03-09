@@ -7,36 +7,49 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>Dit is een school opdracht</header>
+	<header>
+		<img class=alert src="img/alert.svg" alt="">
+		<p>Dit is een school opdracht</p>
+	</header>
 	<main>
 		<section>
 			<h1>Aangifte erfbelasting 2026</h1>
-			<img src="trein.jpg" alt="trein">
+			<img class="hero" src="img/trein.jpg" alt="trein">
 		</section>
 		<form>
+			<ol>
+				<li>Gegevens</li>
+				<li>Kinderen</li>
+				<li>Testament</li>
+				<li>Wie</li>
+			</ol>
 			<fieldset>
 				<legend>Gegevens van de overledene</legend>
-				<div>
-					<label for="ov-naam">Voorletter(s)*
-						<input required type="text" id="ov-naam" name="ov-naam">
-					</label>
+				<div class="three-col">
+					<div>
+						<label for="ov-naam">Voorletter(s)
+							<input required aria-describedby="error-id" pattern="[A-Za-z]+" type="text" id="ov-naam" name="ov-naam">
+						</label>
+						<p class="error" id="error-id" aria-describedby="polite"></p>
+					</div>
 					<label for="ov-tussen">Tussenvoegsel(s)
-						<input type="text" id="ov-tussen" name="tussen">
+						<input pattern="[A-Za-z]+" type="text" id="ov-tussen" name="tussen">
 					</label>
-					<label for="ov-achternaam">Achternaam*
-						<input required type="text" id="ov-achternaam" name="ov-achternaam">
+					<label for="ov-achternaam">Achternaam
+						<input required pattern="[A-Za-z]+" type="text" id="ov-achternaam" name="ov-achternaam">
 					</label>
 				</div>
 				<label for="bsn1">Bsn overledene</label>
-				<input required id="bsn1" name="bsn1" type="number"> 
+				<input required min="100000000" max="999999999" id="bsn1" name="bsn1" type="number"> 
 				<label for="deathdate">Overlijdensdatum</label>
 				<input required type="date" id="deathdate" name="death-date">
 			</fieldset>
+
+
+
 			<fieldset>
 				<legend>Partnerschap overledene</legend>
 				
-				
-
 				<fieldset>
 					<legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
 					<label>
@@ -55,6 +68,7 @@
 
 				<fieldset>
 					<legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
+					<img src="img/info.png" alt="info">
 					<label>Ja. Stuur een kopie van de akte mee met de aangifte.
 						<input type="radio" name="notariële-akte">
 						<span class="checkmark"></span>
@@ -86,18 +100,22 @@
 					<input type="date" name="datum-huwelijk">
 				</label>
 			</fieldset>
-		<input type="submit" value="Volgende" class="next-btn">
+			<a href="page-two.html">
+				wat
+			</a>
+				<input type="submit" value="Volgende" class="next-btn">
+
 
 		</form>
 	</main>
 	<footer>
 		<b>Over</b>
-		<ul>
+		<!-- <ul>
 			<li>Minor</li>
 			<li>Webdesign</li>
 			<li>Development</li>
 			<li>Alisha</li>
-		</ul>
+		</ul> -->
 	</footer>
 	<script src="script.js"></script>
 </body>
