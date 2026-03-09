@@ -184,9 +184,9 @@ Belangrijkste punten:
 	Omdat dit confirmatie is dat er niets mis is gegaan
 
 
-
+Checkout met Jean-Carlos
 <b>Wat heb ik vandaag gedaan?</b>
-Gast les van [Rijk van zanten](https://directus.io/team/rijk-van-zanten) in de ochtend. Hij heeft ook deze minor gedaan in 2017.
+Gast les van [Rijk van zanten](https://directus.io/team/rijk-van-zanten) in de ochtend. Hij heeft ook deze minor gedaan in 2017. 
 
 Eindelijk meer gedaan aan de input validation en patterns. De standaard error uitgezet om mijn eigen custom error te gebruiken
 
@@ -195,6 +195,10 @@ Eindelijk meer gedaan aan de input validation en patterns. De standaard error ui
 
 <b>Wat heb ik geleerd?</b>
 De standaard van form validation en waarom de UX daarvan uitmaakt.
+
+
+<b>Wat ga ik morgen doen?</b>
+De progressive disclosure maken en nog een tweede pattern vinden om te implementeren.
 
 ### dag 6
 #### 10.03.2026

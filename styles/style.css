@@ -44,19 +44,23 @@ body {
 
 /* steps */
 ol {
-	margin: 0;
+	margin: 55px 0 0 0;
 	padding: 0;
 	position: sticky;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	list-style: none;
 	border-top: 3px solid var(--btn);
-	width: 600px;
+	width: 320px;
 }
 
 ol > li {
 	padding: 44px 0;
 	text-align: center;
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 ol > li::before {
@@ -99,6 +103,10 @@ ol > li:nth-child(4)::before {
 	outline: 3px solid var(--btn);
 }
 
+ul li {
+	color: var(--white);
+}
+
 section {
 	position: relative;
 	background-color: var(--ns-yellow);
@@ -119,12 +127,22 @@ section {
     object-fit: cover;
 }
 
-/* form */
-form {
+main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+}
+
+/* form */
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--white);
+	margin: 0 0 40px 0;
+	width: 100%;
 }
 
 label {
@@ -144,25 +162,23 @@ legend {
 
 :user-valid {
 	border-bottom: 2px solid var(--valid);
-	background-image: url(img/Green-check-mark.png);
+	background-image: url(../img/Green-check-mark.png);
 	background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 10px;
 }
 
 label:has(+ input:required)::after,
-div > label:has(+ input:required)::after {
+div label:has(input:required)::after {
     content: "*";
     color: var(--invalid);
 }
 
 fieldset {
 	width: 90%;
-	border: none;
-	border-top: 4em solid white;
-	background-color: var(--white);
 	margin: 10px;
-	padding: 25px;
+	/* border-top: 1px solid gray; */
+	border: none;
 }
 
 fieldset > fieldset > legend {
@@ -216,11 +232,6 @@ footer {
 	background-color: var(--white);
 	color: var(--btn);
 }
-/* 
-ul li {
-	color: var(--btn);
-	list-style: none;
-} */
 
 label:has(input[type='radio']) {
   display: block;
@@ -288,7 +299,7 @@ label .checkmark:after {
 
 .three-col {
 	display: grid;
-	grid-template-columns: repeat(3, 200px);
+	grid-template-columns: repeat(auto-fill, 200px);
 }
 
 div label input {
@@ -310,7 +321,7 @@ div label input {
 input::file-selector-button {
   font-weight: bold;
   background-color: var(--btn);
-  color: white;
+  color: var(--white);
   padding: 0.5em;
   border-radius: 3px;
   border: none;
@@ -322,6 +333,37 @@ fieldset > fieldset legend::after {
 	color: var(--invalid);
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip img {
+	  margin: 0 5px;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  line-height: 24px;
+  background-color: rgb(40, 40, 40);
+  color: var(--white);
+  border-radius: 6px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 65%;
+  margin-left: -65px;
+  -webkit-box-shadow: 0px 8px 28px -1px rgba(0,0,0,0.19); 
+	box-shadow: 0px 8px 28px -1px rgba(0,0,0,0.19);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 @media (min-width: 1000px) {
 	section {
 		margin-bottom: 380px;
@@ -329,15 +371,19 @@ fieldset > fieldset legend::after {
 
 	.hero {
 		top: 190px;
-		width: 70%;
+		width: 60%;
 		height: 350px;
 	}
 
-	fieldset {
+	form {
 		width: 50%;
 	}
 
 	fieldset > fieldset {
 		width: 100%;
+	}
+
+	ol {
+		width: 600px;
 	}
 }

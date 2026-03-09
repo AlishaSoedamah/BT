@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Aangifte erfbelasting 2026</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 	<header>Dit is een school opdracht</header>
 	<main>
 		<section>
 			<h1>Aangifte erfbelasting 2026</h1>
-			<img src="img/trein.jpg" alt="trein">
+			<img class="hero" src="img/trein.jpg" alt="trein">
 		</section>
 		<form>
 	
@@ -55,17 +55,6 @@
 					</label>
 				</fieldset>
 
-					<fieldset>
-					<legend>Had dit overleden kind zelf kinderen?</legend>
-					<label>Ja
-						<input type="radio" name="kinderen-overleden-kinderen" id="kinderen-overleden-kinderen-ja">
-						<span class="checkmark"></span>
-					</label>
-					<label>Nee
-						<input type="radio" name="kinderen-overleden-kinderen" id="kinderen-overleden-kinderen-nee">
-						<span class="checkmark"></span>
-					</label>
-				</fieldset>
 			</fieldset>
 	
 	
@@ -85,12 +74,20 @@
 					</fieldset>
 					<label for="protocolnummer">Protocolnummer notaris</label>
 					<input required type="text">
-					<label for="protocolnummer">Voorletter(s)</label>
-					<input required type="text" id="protocolnummer" name="naam">
-					<label for="protocolnummer">Tussenvoegsel(s)</label>
-					<input required type="text" id="erf1-tussen" name="tussen">
-					<label for="protocolnummer">Achternaam</label>
-					<input required type="text" id="achternaam" name="achternaam">
+					<div class="three-col">
+						<div>
+							<label for="protocolnummer">Voorletter(s)</label>
+							<input required type="text" id="protocolnummer" name="naam">
+						</div>
+						<div>
+							<label for="protocolnummer">Tussenvoegsel(s)</label>
+							<input required type="text" id="erf1-tussen" name="tussen">
+						</div>
+						<div>
+							<label for="protocolnummer">Achternaam</label>
+							<input required type="text" id="achternaam" name="achternaam">
+						</div>
+					</div>
 					<label>Vestigingsplaats</label>
 					<input required type="text">
 					<label for="testament-datum">Datum van het testament of van de laatste wijziging</label>

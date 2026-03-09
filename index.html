@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Aangifte erfbelasting 2026</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 	<header>
@@ -27,17 +27,19 @@
 				<legend>Gegevens van de overledene</legend>
 				<div class="three-col">
 					<div>
-						<label for="ov-naam">Voorletter(s)
-							<input required aria-describedby="error-id" pattern="[A-Za-z]+" type="text" id="ov-naam" name="ov-naam">
-						</label>
-						<p class="error" id="error-id" aria-describedby="polite"></p>
+						<label for="ov-naam">Voorletter(s)</label>
+						<input required aria-describedby="error-id" pattern="[A-Za-z]+" type="text" id="ov-naam" name="ov-naam">
+						<p class="error" id="error-id"></p>
 					</div>
-					<label for="ov-tussen">Tussenvoegsel(s)
+					<div>
+						<label for="ov-tussen">Tussenvoegsel(s)</label>
 						<input pattern="[A-Za-z]+" type="text" id="ov-tussen" name="tussen">
-					</label>
-					<label for="ov-achternaam">Achternaam
-						<input required pattern="[A-Za-z]+" type="text" id="ov-achternaam" name="ov-achternaam">
-					</label>
+						<p class="errortwo" id="errortwo-id"></p>
+					</div>
+					<div>
+						<label for="ov-achternaam">Achternaam</label>
+							<input required pattern="[A-Za-z]+" type="text" id="ov-achternaam" name="ov-achternaam">
+					</div>
 				</div>
 				<label for="bsn1">Bsn overledene</label>
 				<input required min="100000000" max="999999999" id="bsn1" name="bsn1" type="number"> 
@@ -51,15 +53,21 @@
 				<legend>Partnerschap overledene</legend>
 				
 				<fieldset>
-					<legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
+					<legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?<span class="tooltip">
+						<img src="img/info.svg" alt="info">
+						<span class="tooltiptext">Echtgenoot of geregistreerde partner zijn, is niet hetzelfde als:
+							Samenwonen met een notarieel samenlevingscontract of
+							samen met een huisgenoot op hetzelfde adres staan ingeschreven in de Basisregistratie Personen (BRP) van de gemeente
+						</span>
+					</span></legend>
 					<label>
 						Ja
-						<input type="radio" name="overledene" value="ja">
+						<input type="radio" name="overledene" value="ja"  id="overledene-getrouwd-ja">
 						 <span class="checkmark"></span>
 					</label>
 					<label>
 						Nee
-						<input type="radio"  name="overledene" value="nee">
+						<input type="radio" name="overledene" value="nee" id="overledene-getrouwd-nee">
 						 <span class="checkmark"></span>
 					</label>
 				</fieldset>
@@ -68,7 +76,6 @@
 
 				<fieldset>
 					<legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
-					<img src="img/info.png" alt="info">
 					<label>Ja. Stuur een kopie van de akte mee met de aangifte.
 						<input type="radio" name="notariële-akte">
 						<span class="checkmark"></span>
@@ -100,9 +107,6 @@
 					<input type="date" name="datum-huwelijk">
 				</label>
 			</fieldset>
-			<a href="page-two.html">
-				wat
-			</a>
 				<input type="submit" value="Volgende" class="next-btn">
 
 
