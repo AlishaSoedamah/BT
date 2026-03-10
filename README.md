@@ -202,6 +202,15 @@ De progressive disclosure maken en nog een tweede pattern vinden om te implement
 
 ### dag 6
 #### 10.03.2026
+Checkout met Jean-Carlos
+
+<b>Wat heb ik vandaag gedaan?</b>
+
+<b>Hoeveel tijd heeft me dat gekost?</b>
+
+<b>Wat heb ik geleerd?</b>
+
+<b>Wat ga ik morgen doen?</b>
 
 ## week 3 voortgang
 <details>

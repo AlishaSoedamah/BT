@@ -56,15 +56,17 @@ ol {
 }
 
 ol > li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 44px 0;
-	text-align: center;
 	&:hover {
 		cursor: pointer;
 	}
 }
 
 ol > li::before {
-	content: "1";
+	content: "";
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -76,10 +78,19 @@ ol > li::before {
 	bottom: 87px;
 }
 
+ol > li:first-child {
+	justify-content: left;
+}
+
+ol > li:last-child {
+	justify-content: right;
+}
+
 ol > li:nth-child(1)::before {
 	content: "1";
 	color: var(--white);
 	background-color: var(--btn);
+	outline: 3px solid var(--btn);
 }
 
 ol > li:nth-child(2)::before {
@@ -115,13 +126,13 @@ section {
 	justify-content: center;
 	flex-direction: column;
 	width: 100%;
-	height: 250px;
+	height: 150px;
 	margin-bottom: 250px;
 }
 
 .hero {
 	position: absolute;
-	top: 225px;
+	top: 125px;
 	width: 95%;
 	height: 250px;
     object-fit: cover;
@@ -196,6 +207,11 @@ input {
 	padding: 15px 20px;
 	border: 1px solid var(--ns-border-form);
 	border-radius: 6px;
+}
+
+input:focus {
+	outline: none !important;
+    border: 2px solid var(--btn);
 }
 
 input[type='submit'] {
@@ -365,16 +381,28 @@ fieldset > fieldset legend::after {
   visibility: visible;
 }
 
-fieldset:has(#overledene-getrouwd-nee:checked) + .b,
-fieldset:has(#overledene-getrouwd-nee:checked) ~ .c,
-fieldset:has(#overledene-getrouwd-nee:checked) ~ .d {
+fieldset:has([value="overledene-getrouwd-nee"]:checked) + .b,
+fieldset:has([value="overledene-getrouwd-nee"]:checked) ~ .c,
+fieldset:has([value="overledene-getrouwd-nee"]:checked) ~ .d {
   display: none;
 }
 
 fieldset:has([value="notariële-akte-nee"]:checked) ~ .c,
-fieldset:has([value="notariële-akte-nee"]:checked) ~ .d
-{
+fieldset:has([value="notariële-akte-nee"]:checked) ~ .d {
   display: none;
+}
+
+fieldset:has([value="kinderen-nee"]:checked) ~ .e,
+fieldset:has([value="kinderen-nee"]:checked) ~ .f {
+	display: none;
+}
+
+fieldset:has([value="kinderen-overleden-nee"]:checked) ~ .f {
+	display: none;
+}
+
+fieldset:has([value="overledene-testament-nee"]:checked) ~ .g {
+	display: none;
 }
 
 @keyframes --pop-in {
@@ -392,13 +420,13 @@ fieldset:has([value="notariële-akte-nee"]:checked) ~ .d
 	}
 
 	.hero {
-		top: 190px;
+		top: 110px;
 		width: 60%;
 		height: 350px;
 	}
 
 	form {
-		width: 50%;
+		width: 680px;
 		padding: 0 25px;
 	}
 

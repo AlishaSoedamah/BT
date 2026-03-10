@@ -7,43 +7,51 @@
 	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-	<header>Dit is een school opdracht</header>
+	<header>
+		<img class=alert src="img/alert.svg" alt="">
+		<p>Dit is een school opdracht</p>
+	</header>
 	<main>
 		<section>
 			<h1>Aangifte erfbelasting 2026</h1>
 			<img class="hero" src="img/trein.jpg" alt="trein">
 		</section>
-		<form>
-	
+		<form action="page-three.html">
+			<ol>
+				<li>Gegevens</li>
+				<li class="active">Kinderen</li>
+				<li>Testament</li>
+				<li>Wie</li>
+			</ol>
 			<fieldset>
 				<legend>Kinderen van de overledene</legend>
 				<fieldset>
 					<legend>Had de overledene kinderen?</legend>
 					<label>
 						Ja
-						<input type="radio" name="kinderen" id="kinderen-ja">
+						<input type="radio" name="kinderen" value="kinderen-ja">
 						<span class="checkmark"></span>
 					</label>
-					<label>Nee. Ga verder met vraag 1d.
-						<input type="radio" name="kinderen" id="kinderen-nee">
+					<label>Nee
+						<input type="radio" name="kinderen" value="kinderen-nee">
 						<span class="checkmark"></span>
 					</label>
 				</fieldset>
 
 
-				<fieldset>
+				<fieldset class="e">
 					<legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
 					<label>Ja
-						<input type="radio" name="kinderen-overleden" id="kinderen-overleden-ja">
+						<input type="radio" name="kinderen-overleden" value="kinderen-overleden-ja">
 						<span class="checkmark"></span>
 					</label>
-					<label>Nee. Ga verder met vraag 1d.
-						<input type="radio" name="kinderen-overleden" id="kinderen-overleden-nee">
+					<label>Nee
+						<input type="radio" name="kinderen-overleden" value="kinderen-overleden-nee">
 						<span class="checkmark"></span>
 					</label>
 				</fieldset>
 				
-				<fieldset>
+				<fieldset class="f">
 					<legend>Had dit overleden kind zelf kinderen?</legend>
 					<label>Ja
 						<input type="radio" name="kinderen-overleden-kinderen" id="kinderen-overleden-kinderen-ja">
@@ -62,38 +70,40 @@
 					<legend>Testament</legend>
 					<fieldset>
 						<legend>Had de overledene een testament?</legend>
-						<label for="overledene-testament-ja">Ja
-							<input type="radio" name="overledene-testament" id="overledene-testament-ja">
+						<label>Ja
+							<input type="radio" name="overledene-testament" value="overledene-testament-ja">
 							<span class="checkmark"></span>
 						</label>
 							
-						<label for="overledene-testament-nee">Nee
-							<input type="radio" name="overledene-testament" id="overledene-testament-nee">
+						<label>Nee
+							<input type="radio" name="overledene-testament" value="overledene-testament-nee">
 							<span class="checkmark"></span>
 						</label>
 					</fieldset>
-					<label for="protocolnummer">Protocolnummer notaris</label>
-					<input required type="text">
-					<div class="three-col">
-						<div>
-							<label for="protocolnummer">Voorletter(s)</label>
-							<input required type="text" id="protocolnummer" name="naam">
+					<fieldse class="g">
+						<legend>Gegevens notaris</legend>
+						<label for="protocolnummer">Protocolnummer notaris</label>
+						<input required type="text">
+						<div class="three-col">
+							<div>
+								<label for="protocolnummer">Voorletter(s)</label>
+								<input required type="text" id="protocolnummer" name="naam">
+							</div>
+							<div>
+								<label for="protocolnummer">Tussenvoegsel(s)</label>
+								<input required type="text" id="erf1-tussen" name="tussen">
+							</div>
+							<div>
+								<label for="protocolnummer">Achternaam</label>
+								<input required type="text" id="achternaam" name="achternaam">
+							</div>
 						</div>
-						<div>
-							<label for="protocolnummer">Tussenvoegsel(s)</label>
-							<input required type="text" id="erf1-tussen" name="tussen">
-						</div>
-						<div>
-							<label for="protocolnummer">Achternaam</label>
-							<input required type="text" id="achternaam" name="achternaam">
-						</div>
-					</div>
-					<label>Vestigingsplaats</label>
-					<input required type="text">
-					<label for="testament-datum">Datum van het testament of van de laatste wijziging</label>
-					<input required type="date" id="testament-datum">
+						<label>Vestigingsplaats</label>
+						<input required type="text">
+						<label for="testament-datum">Datum van het testament of van de laatste wijziging</label>
+						<input required type="date" id="testament-datum">
+					</fieldset>
 				<input type="submit" value="Volgende">
-
 			</fieldset>
 
 		</form>
