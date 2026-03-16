@@ -16,11 +16,10 @@ inputs.forEach(input => {
 			{
 				if (error)
 				{
-					error.textContent = "Voorletter(s) zijn incorrect";
+					error.textContent = "Veld is leeg";
 					input.setAttribute('aria-describedby', "error-" + input.id);
 				}
 		}
-		// else if (!input.validity.tooLong)
 		else {
 			if (error)
 			{

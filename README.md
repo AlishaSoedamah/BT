@@ -233,6 +233,16 @@ Todo's
 
 ### dag 7
 #### 16.03.2026
+Checkout met Eva
+
+<b>Wat heb ik vandaag gedaan?</b>
+De steps counter beter gemaakt een meer stappen gezet in validatie
+
+<b>Hoeveel tijd heeft me dat gekost?</b>
+de hele dag
+
+<b>Wat heb ik geleerd?</b>
+Meer JS
 
 ### dag 8
 #### 17.03.2026
