@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Aangifte erfbelasting 2026</title>
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/steps.css">
+	<link rel="stylesheet" href="styles/steps1.css">
 </head>
 <body>
 	<header>
@@ -17,34 +19,41 @@
 			<img class="hero" src="img/trein.jpg" alt="trein">
 		</section>
 		<form action="page-two.html">
-			<ol>
-				<li class="active">Gegevens</li>
-				<li>Kinderen</li>
-				<li>Testament</li>
-				<li>Overledene</li>
-			</ol>
+			<nav>
+				<ol>
+					<li><a href="#">Gegevens</a></li>
+					<li><a href="page-two.html">Kinderen</a></li>
+					<li><a href="page-three.html">Testament</a></li>
+					<li><a href="check.html">Controle</a></li>
+				</ol>
+			</nav>
 			<fieldset>
 				<legend>Gegevens van de overledene</legend>
 				<div class="three-col">
 					<div>
 						<label for="ov-naam">Voorletter(s)</label>
-						<input required aria-describedby="error-id" pattern="[A-Za-z]+" type="text" id="ov-naam" name="ov-naam">
-						<p class="error" id="error-id"></p>
+						<input required pattern="[A-Za-z.]+" type="text" id="ov-naam" name="ov-naam">
+						<p class="error" id="error-ov-naam"></p>
 					</div>
 					<div>
 						<label for="ov-tussen">Tussenvoegsel(s)</label>
 						<input pattern="[A-Za-z]+" type="text" id="ov-tussen" name="tussen">
-						<p class="errortwo" id="errortwo-id"></p>
+						<p class="errortwo"></p>
 					</div>
 					<div>
 						<label for="ov-achternaam">Achternaam</label>
 							<input required pattern="[A-Za-z]+" type="text" id="ov-achternaam" name="ov-achternaam">
+							<p class="error" id="error-ov-achternaam"></p>
 					</div>
 				</div>
 				<label for="bsn1">Bsn overledene</label>
-				<input required min="100000000" max="999999999" id="bsn1" name="bsn1" type="number"> 
+				<input required min="100000000" max="999999999" id="bsn1" name="bsn1" type="number">
+				<p class="error" id="error-bsn1"></p>
+
 				<label for="deathdate">Overlijdensdatum</label>
 				<input required type="date" id="deathdate" name="death-date">
+				<p class="error" id="error-deathdate"></p>
+
 			</fieldset>
 
 

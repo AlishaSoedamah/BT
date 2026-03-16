@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aangifte erfbelasting 2026</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/steps.css">
+	<link rel="stylesheet" href="styles/steps4.css">
+	<link href="/path/to/print.css" media="print" rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<img class=alert src="img/alert.svg" alt="">
+		<p>Dit is een school opdracht</p>
+	</header>
+	<main>
+		<section>
+			<h1>Aangifte erfbelasting 2026</h1>
+		</section>
+		<form novalidate action="goodbye.html">
+			<nav>
+				<ol>
+					<li><a href="index.html">Gegevens</a></li>
+					<li><a href="page-two.html">Kinderen</a></li>
+					<li><a href="page-three.html">Testament</a></li>
+					<li><a href="#">Controle</a></li>
+			</ol>
+			</nav>
+			<fieldset>
+				<legend>Controle gegevens</legend>
+				<div class="three-col">
+					<div>
+						<label for="ov-naam">Voorletter(s)</label>
+						<input required aria-describedby="error-id" type="text" id="ov-naam" name="ov-naam">
+						<p class="error" id="error-id"></p>
+					</div>
+					<div>
+						<label for="ov-tussen">Tussenvoegsel(s)</label>
+						<input type="text" id="ov-tussen" name="tussen">
+						<p class="errortwo" id="errortwo-id"></p>
+					</div>
+					<div>
+						<label for="ov-achternaam">Achternaam</label>
+							<input required type="text" id="ov-achternaam" name="ov-achternaam">
+					</div>
+				</div>
+				<label for="bsn1">Bsn overledene</label>
+				<input required min="100000000" max="999999999" id="bsn1" name="bsn1" type="number"> 
+				<label for="deathdate">Overlijdensdatum</label>
+				<input required type="date" id="deathdate" name="death-date">
+			</fieldset>
+			</fieldset>
+			<input type="submit" value="Volgende" class="next-btn">
+		</form>
+	</main>
+	<footer>
+		<b>Over</b>
+		<!-- <ul>
+			<li>Minor</li>
+			<li>Webdesign</li>
+			<li>Development</li>
+			<li>Alisha</li>
+		</ul> -->
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

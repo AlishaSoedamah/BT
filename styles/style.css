@@ -3,6 +3,7 @@
 	--ns-blue: #102F7D;
 	--grey-bg: #E6E6E8;
 	--white: #ffffff;
+	--black: #000000;
 	--btn: #0063d3;
 	--transparent-blue: #0062d355;
 	--ns-border-form: #c4c5cb;
@@ -42,78 +43,6 @@ body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif, arial;
 }
 
-/* steps */
-ol {
-	margin: 55px 0 0 0;
-	padding: 0;
-	position: sticky;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	list-style: none;
-	border-top: 3px solid var(--btn);
-	width: 320px;
-}
-
-ol > li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 44px 0;
-	&:hover {
-		cursor: pointer;
-	}
-}
-
-ol > li::before {
-	content: "";
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	font-weight: 700;
-	bottom: 87px;
-}
-
-ol > li:first-child {
-	justify-content: left;
-}
-
-ol > li:last-child {
-	justify-content: right;
-}
-
-ol > li:nth-child(1)::before {
-	content: "1";
-	color: var(--white);
-	background-color: var(--btn);
-	outline: 3px solid var(--btn);
-}
-
-ol > li:nth-child(2)::before {
-	content: "2";
-	color: var(--btn);
-	background-color: var(--white);
-	outline: 3px solid var(--btn);
-}
-
-ol > li:nth-child(3)::before {
-	content: "3";
-	color: var(--btn);
-	background-color: var(--white);
-	outline: 3px solid var(--btn);
-}
-
-ol > li:nth-child(4)::before {
-	content: "4";
-	color: var(--btn);
-	background-color: var(--white);
-	outline: 3px solid var(--btn);
-}
-
 ul li {
 	color: var(--white);
 }
@@ -127,15 +56,6 @@ section {
 	flex-direction: column;
 	width: 100%;
 	height: 150px;
-	margin-bottom: 250px;
-}
-
-.hero {
-	position: absolute;
-	top: 125px;
-	width: 95%;
-	height: 250px;
-    object-fit: cover;
 }
 
 main {
@@ -241,7 +161,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type=number] {
-    -moz-appearance:textfield; /* Firefox */
+    -moz-appearance: textfield; /* Firefox */
 }
 
 footer {
@@ -405,6 +325,11 @@ fieldset:has([value="overledene-testament-nee"]:checked) ~ .g {
 	display: none;
 }
 
+.card {
+	background-color: var(--ns-yellow);
+	padding: 20px;
+}
+
 @keyframes --pop-in {
 	0% {
 		scale: 0.5;
@@ -415,16 +340,6 @@ fieldset:has([value="overledene-testament-nee"]:checked) ~ .g {
 }
 
 @media (min-width: 1000px) {
-	section {
-		margin-bottom: 380px;
-	}
-
-	.hero {
-		top: 110px;
-		width: 60%;
-		height: 350px;
-	}
-
 	form {
 		width: 680px;
 		padding: 0 25px;
@@ -437,4 +352,20 @@ fieldset:has([value="overledene-testament-nee"]:checked) ~ .g {
 	ol {
 		width: 600px;
 	}
+}
+
+@media print {
+	body {
+		color: var(--black);
+	}
+
+	section {
+	  margin-bottom: 0;
+	}
+
+  img, ol, input[type='submit'] header,
+  footer, nav {
+	display: none;
+  }
+
 }

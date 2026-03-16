@@ -1,0 +1,14 @@
+ol > li:nth-child(1)::before,
+ol > li:nth-child(2)::before {
+	content: "✓";
+	color: var(--white);
+	background-color: var(--radio-color);
+	outline: 3px solid var(--radio-color);
+}
+
+ol > li:nth-child(3)::before {
+	content: "3";
+	color: var(--white);
+	background-color: var(--btn);
+	outline: 3px solid var(--btn);
+}

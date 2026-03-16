@@ -202,19 +202,31 @@ De progressive disclosure maken en nog een tweede pattern vinden om te implement
 
 ### dag 6
 #### 10.03.2026
-Checkout met Jean-Carlos
+Checkout met Jeppe
 
 <b>Wat heb ik vandaag gedaan?</b>
+Bezig geweest met cstom JS validation in de site en de wg van Vasilis.
 
 <b>Hoeveel tijd heeft me dat gekost?</b>
+de hele dag
 
 <b>Wat heb ik geleerd?</b>
-
-<b>Wat ga ik morgen doen?</b>
+Je moet eerst in HMTL novalidate op een form zetten
 
 ## week 3 voortgang
 <details>
 <summary>Voortgang 13.03.2026</summary>
+Todo's 
+- je kan de steps navigatie "faken" door het op elke pagin'a anders te stijlen
+- Maak alle optionele vragen anders dan de verplichte vragen
+- Input validation
+- nog een opsla knop met een feedback - "Je antwoorden zijn opgeslagen"
+- Een intro tekst
+- Een tekst nadat de vragen verstuurd zijn
+- zet bv "een bsn bestaat uit 9 nummers in de label"
+- leg uit wat je gaat doen met de verstuurde vragen?
+- Misschien een controle pagina zodat je al je antwoorden weer kunt bekijken
+
 </details>
 
 ## week 4
@@ -229,3 +241,6 @@ Checkout met Jean-Carlos
 ## bronnen
 [:user-valid](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-valid)
 [:user-invalid](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid)
+[print stylesheet](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Printing)
+[remove arrows from input](https://stackoverflow.com/a/4298216)
+[custom radio btn](https://www.w3schools.com/howto/howto_css_custom_checkbox.asp)

@@ -1,0 +1,14 @@
+
+ol > li:nth-child(1)::before {
+	content: "1";
+	color: var(--btn);
+	background-color: var(--white);
+	outline: 3px solid var(--btn);
+}
+
+ol > li:nth-child(2)::before {
+	content: "2";
+	color: var(--white);
+	background-color: var(--btn);
+	outline: 3px solid var(--btn);
+}
