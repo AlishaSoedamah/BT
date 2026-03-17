@@ -17,7 +17,7 @@
 		<section>
 			<h1>Aangifte erfbelasting 2026</h1>
 		</section>
-		<form novalidate action="page-three.html">
+		<form action="page-three.html">
 			<nav>
 				<ol>
 					<li><a href="index.html">Gegevens</a></li>
@@ -28,16 +28,16 @@
 			</nav>
 			<fieldset>
 				<legend>Kinderen van de overledene</legend>
+				<p>Stap 2 van de 4</p>
 				<fieldset>
 					<legend>Had de overledene kinderen?</legend>
-					<p>Stap 2 van de 4</p>
 					<label>
 						Ja
-						<input type="radio" name="kinderen" value="kinderen-ja">
+						<input required type="radio" name="kinderen" value="kinderen-ja">
 						<span class="checkmark"></span>
 					</label>
 					<label>Nee
-						<input type="radio" name="kinderen" value="kinderen-nee">
+						<input required type="radio" name="kinderen" value="kinderen-nee">
 						<span class="checkmark"></span>
 					</label>
 				</fieldset>
@@ -66,50 +66,8 @@
 						<span class="checkmark"></span>
 					</label>
 				</fieldset>
-
-			</fieldset>
-	
-	
-			<fieldset>
-					<legend>Testament</legend>
-					<fieldset>
-						<legend>Had de overledene een testament?</legend>
-						<label>Ja
-							<input type="radio" name="overledene-testament" value="overledene-testament-ja">
-							<span class="checkmark"></span>
-						</label>
-							
-						<label>Nee
-							<input type="radio" name="overledene-testament" value="overledene-testament-nee">
-							<span class="checkmark"></span>
-						</label>
-					</fieldset>
-					<fieldse class="g">
-						<legend>Gegevens notaris</legend>
-						<label for="protocolnummer">Protocolnummer notaris</label>
-						<input required type="text">
-						<div class="three-col">
-							<div>
-								<label for="protocolnummer">Voorletter(s)</label>
-								<input required type="text" id="protocolnummer" name="naam">
-							</div>
-							<div>
-								<label for="protocolnummer">Tussenvoegsel(s)</label>
-								<input required type="text" id="erf1-tussen" name="tussen">
-							</div>
-							<div>
-								<label for="protocolnummer">Achternaam</label>
-								<input required type="text" id="achternaam" name="achternaam">
-							</div>
-						</div>
-						<label>Vestigingsplaats</label>
-						<input required type="text">
-						<label for="testament-datum">Datum van het testament of van de laatste wijziging</label>
-						<input required type="date" id="testament-datum">
-					</fieldset>
 				<input type="submit" value="Volgende">
 			</fieldset>
-
 		</form>
 	</main>
 	<footer>

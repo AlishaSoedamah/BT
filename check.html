@@ -18,7 +18,7 @@
 		<section>
 			<h1>Aangifte erfbelasting 2026</h1>
 		</section>
-		<form novalidate action="goodbye.html">
+		<form action="goodbye.html">
 			<nav>
 				<ol>
 					<li><a href="index.html">Gegevens</a></li>
@@ -30,18 +30,50 @@
 			<fieldset>
 				<legend>Controle gegevens</legend>
 				<p>Stap 4 van de 4</p>
+				<h2>Gegevens van de overledene</h2>
+				<b>Voorletters</b>
+				<p>A.K.</p>
+				<b>Achternaam</b>
+				<p>Soedamah</p>
+				<b>Overlijdensdatum</b>
+				<p>14 maart 2026</p>
+				<h2>Partnerschap overledene</h2>
+				<b>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</b>
+				<p>Nee</p>
+				<h2>Kinderen van de overledene</h2>
+				<b>Had de overledene kinderen?</b>
+				<p>nee</p>
+				<h2>Testament</h2>
+				<b>Had de overledene een testament?</b>
+				<p>nee</p>
+				<label class="change-answer-btn">Pas deze gegevens aan
+					<input type="checkbox" value="show-input-to-fix">
+				</label>
 				<input type="submit" value="ik heb alle antwoorden naar waarheid ingevuld" class="next-btn">
+			</fieldset>
+			<fieldset class="change-answers">
+				<legend>Pas antwoorden aan</legend>
+				<fieldset>
+					<legend>Gegevens van de overledene</legend>
+					<label>Voorletters
+						<input type="text" value="A.K.">
+					</label>
+					<label>Achternaam
+						<input type="text" value="Soedamah">
+					</label>
+
+				</fieldset>
 			</fieldset>
 		</form>
 	</main>
 	<footer>
 		<b>Over</b>
-		<!-- <ul>
+		<ul>
 			<li>Minor</li>
 			<li>Webdesign</li>
 			<li>Development</li>
 			<li>Alisha</li>
-		</ul> -->
+		</ul>
 	</footer>
 	<script src="script.js"></script>
 </body>

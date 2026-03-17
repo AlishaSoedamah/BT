@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/steps.css">
 	<link rel="stylesheet" href="styles/steps1.css">
-	<link href="styles/print.css" media="print" rel="stylesheet" />
+	<link href="styles/print.css" media="print" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -34,28 +34,26 @@
 				<div class="three-col">
 					<div>
 						<label for="ov-naam">Voorletters</label>
-						<input required pattern="[A-Za-z.]+" type="text" id="ov-naam" name="ov-naam">
+						<input required type="text" id="ov-naam" name="ov-naam" title="Voornaam is incorrect">
 						<p class="error" id="error-ov-naam"></p>
 					</div>
 					<div>
 						<label for="ov-tussen">Tussenvoegsels</label>
-						<input pattern="[A-Za-z]+" type="text" id="ov-tussen" name="tussen">
-						<p class="errortwo"></p>
+						<input type="text" id="ov-tussen" name="tussen" title="Tussenvoegsels zijn incorrect">
+						<p class="error"></p>
 					</div>
 					<div>
 						<label for="ov-achternaam">Achternaam</label>
-							<input required pattern="[A-Za-z]+" type="text" id="ov-achternaam" name="ov-achternaam">
+							<input required type="text" id="ov-achternaam" name="ov-achternaam" title="Achternaam is incorrect">
 							<p class="error" id="error-ov-achternaam"></p>
 					</div>
 				</div>
 				<label for="bsn1">Bsn overledene</label>
-				<input required min="100000000" max="999999999" id="bsn1" name="bsn1" type="number">
+				<input required pattern="[0-9]{9}" inputmode="numeric" id="bsn1" name="bsn1" title="BSN is incorrect">
 				<p class="error" id="error-bsn1"></p>
-
 				<label for="deathdate">Overlijdensdatum</label>
-				<input required type="date" id="deathdate" name="death-date">
+				<input required type="date" id="deathdate" name="death-date" title="Overlijdensdatum is incorrect">
 				<p class="error" id="error-deathdate"></p>
-
 			</fieldset>
 
 
@@ -64,27 +62,24 @@
 				<legend>Partnerschap overledene</legend>
 				
 				<fieldset>
-					<legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?<span class="tooltip">
-						<img src="img/info.svg" alt="info">
-						<label for="">
-							<input type="checkbox" name="info-geregistreerde-partner">
-							<div class="info">
-								Echtgenoot of geregistreerde partner zijn, is niet hetzelfde als:
-								Samenwonen met een notarieel samenlevingscontract of
-								samen met een huisgenoot op hetzelfde adres staan ingeschreven in de Basisregistratie Personen (BRP) van de gemeente
-							</div>
-						</label>
-					</span></legend>
+					<legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
+						<details>
+							<summary>Wat is een echtgenoot of geregistreerde partner?<img src="img/info.svg" alt="info"></summary>
+							Echtgenoot of geregistreerde partner zijn, is niet hetzelfde als:
+							Samenwonen met een notarieel samenlevingscontract of
+							samen met een huisgenoot op hetzelfde adres staan ingeschreven in de Basisregistratie Personen (BRP) van de gemeente
+						</details>
 					<label>
 						Ja
-						<input type="radio" name="overledene-getrouwd" value="overledene-getrouwd-ja">
+						<input required type="radio" name="overledene-getrouwd" value="overledene-getrouwd-ja">
 						 <span class="checkmark"></span>
 					</label>
 					<label>
 						Nee
-						<input type="radio" name="overledene-getrouwd" value="overledene-getrouwd-nee">
+						<input required type="radio" name="overledene-getrouwd" value="overledene-getrouwd-nee" title="Kies 1 van deze opties">
 						 <span class="checkmark"></span>
 					</label>
+					<p class="error" id="error-pick-one"></p>
 				</fieldset>
 
 
@@ -124,17 +119,21 @@
 				</fieldset>
 
 			</fieldset>
-			<input type="submit" value="Volgende" class="next-btn">
+			<label class="for-later">Sla op en ga later verder
+				<input type="radio" value="sla-op">
+			</label>
+			<mark></mark>
+			<input type="submit" value="Volgende">
 		</form>
 	</main>
 	<footer>
 		<b>Over</b>
-		<!-- <ul>
+		<ul>
 			<li>Minor</li>
 			<li>Webdesign</li>
 			<li>Development</li>
 			<li>Alisha</li>
-		</ul> -->
+		</ul>
 	</footer>
 	<script src="script.js"></script>
 </body>

@@ -247,7 +247,25 @@ Meer JS
 ### dag 8
 #### 17.03.2026
 
+Eerste probleem: als dit isValid false is dan zie je de error msg niet meer
+```
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
 
+	let isValid = true;
+
+	inputs.forEach(input => {
+
+		if (!input.validity.valid) {
+			isValid = false;
+		}
+	});
+
+	if (isValid) {
+		form.submit();
+	}
+});
+```
 ## bronnen
 [:user-valid](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-valid)
 [:user-invalid](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid)

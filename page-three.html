@@ -17,7 +17,7 @@
 		<section>
 			<h1>Aangifte erfbelasting 2026</h1>
 		</section>
-		<form novalidate action="final.html">
+		<form action="check.html">
 			<nav>
 				<ol>
 					<li><a href="index.html">Gegevens</a></li>
@@ -26,9 +26,59 @@
 					<li><a href="check.html">Controle</a></li>
 				</ol>
 			</nav>
+				<fieldset>
+					<legend>Testament</legend>
+					<p>Stap 3 van de 4</p>
+					<details>
+							<summary>Hoe is geregeld wie iets krijgt?<img src="img/info.svg" alt="info"></summary>
+							Is er een testament? Dan staat daarin wie de verkrijgers zijn
+							en hoe zij de erfenis moeten verdelen.
+							Is er geen testament? Dan bepaalt het erfrecht wie de erfgenamen zijn.
+							<a href="#">meer info</a>
+						</details>
+					<fieldset>
+						<legend>Had de overledene een testament?</legend>
+						<label>Ja
+							<input required type="radio" name="overledene-testament" value="overledene-testament-ja">
+							<span class="checkmark"></span>
+						</label>
+							
+						<label>Nee
+							<input required type="radio" name="overledene-testament" value="overledene-testament-nee">
+							<span class="checkmark"></span>
+						</label>
+					</fieldset>
+					<fieldset class="g">
+						<legend>Gegevens notaris</legend>
+						<label for="protocolnummer">Protocolnummer notaris</label>
+						<input required id="protocolnummer" type="text" title="Voornaam is incorrect">
+						<p class="error"></p>
+						<div class="three-col">
+							<div>
+								<label for="protocolnummer-voorletters">Voorletter(s)</label>
+								<input required type="text" id="protocolnummer-voorletters" name="naam">
+							</div>
+							<div>
+								<label for="protocolnummer">Tussenvoegsel(s)</label>
+								<input required type="text" id="erf1-tussen" name="tussen">
+							</div>
+							<div>
+								<label for="protocolnummer">Achternaam</label>
+								<input required type="text" id="achternaam" name="achternaam">
+							</div>
+						</div>
+						<label>Vestigingsplaats</label>
+						<input required type="text">
+						<label for="testament-datum">Datum van het testament of van de laatste wijziging</label>
+						<input required type="date" id="testament-datum">
+					</fieldset>
+			</fieldset>
+
+
+
+
 			<fieldset>
 				<legend>Gegevens gemachtigde</legend>
-				<p>Stap 3 van de 4</p>
 				<p>Vul 1 van de 3 in: het bsn of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris.</p>
 				<div class="three-col">
 					<div>
