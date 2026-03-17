@@ -145,6 +145,7 @@ Met reportValidity kan je een custom message geven aan een bestaande error. Je k
 ## week 2 voortgang
 <details>
 <summary>Voortgang 06.03.2026</summary>
+
 - Denk meer aan de ux van je form -> bsn niet in 3 inputs maar 1, je mag de styling van de input wel zo maken als in de pdf
 - de form over meerdere pagina's verspreiden is ook ok
 - werk meer aan de styling van de site
@@ -217,6 +218,7 @@ Je moet eerst in HMTL novalidate op een form zetten
 <details>
 <summary>Voortgang 13.03.2026</summary>
 Todo's 
+
 - je kan de steps navigatie "faken" door het op elke pagin'a anders te stijlen
 - Maak alle optionele vragen anders dan de verplichte vragen
 - Input validation
@@ -246,6 +248,12 @@ Meer JS
 
 ### dag 8
 #### 17.03.2026
+
+<b>Wat heb ik vandaag gedaan?</b>
+Controle pagina af gemaakt en de checkoutmet Nienke gedaan
+
+<b>Hoeveel tijd heeft me dat gekost?</b>
+de hele dag
 
 Eerste probleem: als dit isValid false is dan zie je de error msg niet meer
 ```

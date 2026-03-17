@@ -80,7 +80,19 @@
 			<fieldset>
 				<legend>Gegevens gemachtigde</legend>
 				<p>Vul 1 van de 3 in: het bsn of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris.</p>
-				<div class="three-col">
+				<label>Bsn/RSIN gemachtigde
+					<input required type="radio" name="pattern-two">
+					<span class="checkmark"></span>
+				</label>
+				<label>Beconnummer adviseur
+					<input required type="radio" name="pattern-two">
+						<span class="checkmark"></span>
+				</label>
+				<label> Protocolnummer notaris
+					<input required type="radio" name="pattern-two">
+					<span class="checkmark"></span>
+				</label>
+				<!-- <div class="three-col">
 					<div>
 						<label>Bsn/RSIN gemachtigde</label>
 						<input required type="number" name="bsn">
@@ -93,7 +105,7 @@
 						<label>Beconnummer adviseur</label>
 						<input required type="number" name="Beconnummer">
 					</div>
-				</div>
+				</div> -->
 				<input type="submit" value="Volgende">
 			</fieldset>
 		</form>
