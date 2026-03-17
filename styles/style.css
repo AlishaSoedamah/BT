@@ -19,7 +19,7 @@
 
 body {
 	color: var(--ns-blue);
-	line-height: 145%;
+	line-height: 200%;
 }
 
 header {
@@ -58,7 +58,7 @@ body {
 nav ol li a {
 	bottom: 40px;
 	position: absolute;
-	padding: 160px 0 0 0;
+	padding: 80px 0 0 0;
 	color: var(--btn);
 }
 
@@ -108,7 +108,8 @@ legend {
 	border-bottom: 2px solid var(--invalid);
 }
 
-:user-valid {
+
+:user-valid:not([value="submit"]) {
 	border-bottom: 2px solid var(--valid);
 	background-image: url(../img/Green-check-mark.png);
 	background-repeat: no-repeat;
@@ -147,6 +148,7 @@ input:focus {
 input[type='submit'] {
 	background-color: var(--btn);
 	color: var(--white);
+	font-size: 16px;
 	&:hover {
 		cursor: pointer;
 	}
@@ -190,6 +192,7 @@ label:has(input[type='radio']) {
   -ms-user-select: none;
   user-select: none;
 }
+
 /* Create a custom radio button w3schools */
 /* Hide the browser's default radio button */
 label input[type='radio'] {
@@ -279,26 +282,27 @@ input::file-selector-button {
 
 fieldset:has([value="overledene-getrouwd-nee"]:checked) + .b,
 fieldset:has([value="overledene-getrouwd-nee"]:checked) ~ .c,
-fieldset:has([value="overledene-getrouwd-nee"]:checked) ~ .d {
-  display: none;
-}
-
+fieldset:has([value="overledene-getrouwd-nee"]:checked) ~ .d,
 fieldset:has([value="notariële-akte-nee"]:checked) ~ .c,
-fieldset:has([value="notariële-akte-nee"]:checked) ~ .d {
+fieldset:has([value="notariële-akte-nee"]:checked) ~ .d,
+fieldset:has([value="kinderen-nee"]:checked) ~ .e,
+fieldset:has([value="kinderen-nee"]:checked) ~ .f,
+fieldset:has([value="kinderen-overleden-nee"]:checked) ~ .f,
+fieldset:has([value="overledene-testament-nee"]:checked) ~ .g
+{
   display: none;
 }
 
-fieldset:has([value="kinderen-nee"]:checked) ~ .e,
-fieldset:has([value="kinderen-nee"]:checked) ~ .f {
-	display: none;
+#show-bsn-input,
+#show-beconnummer-input, 
+#show-protonummer-input {
+  display: none;
 }
 
-fieldset:has([value="kinderen-overleden-nee"]:checked) ~ .f {
-	display: none;
-}
-
-fieldset:has([value="overledene-testament-nee"]:checked) ~ .g {
-	display: none;
+body:has([value="gemachtigde-bsn"]:checked) #show-bsn-input,
+body:has([value="gemachtigde-beconnummer"]:checked) #show-beconnummer-input,
+body:has([value="gemachtigde-protonummer"]:checked) #show-protonummer-input {
+  display: block;
 }
 
 mark {
@@ -325,33 +329,24 @@ mark {
 }
 
 .for-later {
-	background-color: var(--ns-yellow);
+	background-color: var(--white);
 	color: var(--btn);
-	padding: 10px !important;
-	margin: 10px;
+	outline: 2px var(--btn) solid;
+	padding: 15px 10px !important;
 	border-radius: 5px;
 	width: 200px;
+	font-size: 16px;
+	align-items: center;
 	input {
 		display: none;
 	}
 }
 
 body:has([value="sla-op"]:checked) mark::after {
-  content: "Uw antwoorden zijn opgeslagen";
-}
-
-.change-answer-btn {
-	background-color: var(--ns-yellow);
-	color: var(--btn);
-	padding: 10px;
-	border-radius: 5px;
-	width: 190px;
-	&:hover {
-		cursor: pointer;
-	}
-	input {
-		display: none;
-	}
+  content: "Uw antwoorden zijn opgeslagen!";
+  background-color: #05a88737;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .change-answers {
@@ -361,7 +356,6 @@ body:has([value="sla-op"]:checked) mark::after {
 body:has([value="show-input-to-fix"]:checked) .change-answers {
   display: block;
 }
-
 
 @keyframes --pop-in {
 	0% {
@@ -373,6 +367,10 @@ body:has([value="show-input-to-fix"]:checked) .change-answers {
 }
 
 @media (min-width: 640px) {
+	body {
+		line-height: 145%;
+	}
+
 	form {
 		width: 600px;
 		padding: 0 25px;

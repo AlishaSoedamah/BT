@@ -88,28 +88,28 @@
 				<legend>Gegevens gemachtigde</legend>
 				<p>Vul 1 van de 3 in: het bsn of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris.</p>
 				<label>Bsn/RSIN gemachtigde
-					<input required type="radio" name="pattern-two">
+					<input required type="radio" value="gemachtigde-bsn" name="pattern-two">
 					<span class="checkmark"></span>
-					<input required type="number" name="bsn">
 				</label>
+				<input required type="number" name="bsn" id="show-bsn-input">
 				<label>Beconnummer adviseur
-					<input required type="radio" name="pattern-two">
+					<input required type="radio" value="gemachtigde-beconnummer" name="pattern-two">
 					<span class="checkmark"></span>
-					<input required type="number">
 				</label>
+				<input required type="number" id="show-beconnummer-input">
 				<label> Protocolnummer notaris
-					<input required type="radio" name="pattern-two">
+					<input required type="radio" value="gemachtigde-protonummer" name="pattern-two">
 					<span class="checkmark"></span>
-					<input required type="number" name="Beconnummer">
 				</label>
+				<input required type="number" name="Beconnummer" id="show-protonummer-input">
 
 
 
+				<input type="submit" value="Volgende">
 				<label class="for-later">Sla op en ga later verder
 					<input type="radio" value="sla-op">
 				</label>
 				<mark></mark>
-				<input type="submit" value="Volgende">
 			</fieldset>
 		</form>
 	</main>

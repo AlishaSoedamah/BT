@@ -66,17 +66,19 @@
 						<summary>Wat is een echtgenoot of geregistreerde partner?<img src="img/info.svg" alt="info"></summary>
 						Een echtgenoot en een geregistreerd partner zijn beiden personen met wie u een wettelijk erkende relatie heeft aangegaan.
 						Een echtgenoot of geregistreerde partner zijn, is niet hetzelfde als:
-						Samenwonen met een notarieel samenlevingscontract of
-						samen met een huisgenoot op hetzelfde adres staan ingeschreven in de Basisregistratie Personen (BRP) van de gemeente
+						<ul>
+							<li>Samenwonen met een notarieel samenlevingscontract</li>
+							<li>samen met een huisgenoot op hetzelfde adres staan ingeschreven in de Basisregistratie Personen (BRP) van de gemeente</li>
+						</ul>
 					</details>
 					<label>
 						Ja
-						<input required type="radio" name="overledene-getrouwd">
+						<input required type="radio" value="overledene-getrouwd-ja" name="overledene-getrouwd">
 						<span class="checkmark"></span>
 					</label>
 					<label>
 						Nee
-						<input required type="radio" name="overledene-getrouwd" id="overledene-getrouwd" title="Vul 1 van deze antwoorden in om verder te gaan">
+						<input required type="radio" name="overledene-getrouwd" value="overledene-getrouwd-nee" id="overledene-getrouwd" title="Vul 1 van deze antwoorden in om verder te gaan">
 						<span class="checkmark"></span>
 					</label>
 					<p class="error" id="error-overledene-getrouwd"></p>
@@ -136,11 +138,11 @@
 				</fieldset>
 
 			</fieldset>
+			<input type="submit" value="Volgende">
 			<label class="for-later">Sla op en ga later verder
 				<input type="radio" value="sla-op">
 			</label>
 			<mark></mark>
-			<input type="submit" value="Volgende">
 		</form>
 	</main>
 	<footer>

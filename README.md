@@ -249,6 +249,10 @@ Meer JS
 ### dag 8
 #### 17.03.2026
 
+Info van de WN die ik heb verwerkt in mijn formulier:
+- gebruiker kan voor inzendingen de ingevoerde waardes controleren, wijzigen of ongedaan maken
+- na verzenden verschijnt er een duidelijke bevestiging
+
 <b>Wat heb ik vandaag gedaan?</b>
 Controle pagina af gemaakt en de checkoutmet Nienke gedaan
 
@@ -285,3 +289,4 @@ form.addEventListener('submit', (event) => {
 [regExp chars](https://www.w3schools.com/jsref/jsref_regexp_not_0-9.asp)
 [inputmode](https://www.w3schools.com/TAgs/att_inputmode.asp)
 [set a date as initial state](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/date)
+Custom error handeling: 🧔🏼 Victor Zumpolle 
