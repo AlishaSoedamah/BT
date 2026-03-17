@@ -29,6 +29,26 @@
 			<fieldset>
 				<legend>Kinderen van de overledene</legend>
 				<p>Stap 2 van de 4</p>
+				<details>
+					<summary>Let op! Het gaat hier niet om pleegkinderen of stiefkinderen<img src="img/info.svg" alt="info"></summary>
+						Het gaat hier om kinderen die:
+						<ul>
+							<li> door geboorte of erkenning eigen kind van de
+							overledene zijn</li>
+							<li>door de overledene zijn geadopteerd</li>
+						</ul>
+						Het kan zijn dat een (klein)kind van overledene nog
+						niet geboren is, maar waarvan de moeder zwanger was
+						op het moment van overlijden. Voor dit kind
+						kunt u pas aangifte erfbelasting doen als het geboren is.
+						U kruist dan de relatie ‘(klein)kind’ aan. U geeft aan dat
+						er een ongeboren kind is door ons een brief te sturen
+						met daarin uw naam, bsn en de overlijdensdatum van
+						de overledene.
+				</details>
+				
+
+
 				<fieldset>
 					<legend>Had de overledene kinderen?</legend>
 					<label>
@@ -37,10 +57,13 @@
 						<span class="checkmark"></span>
 					</label>
 					<label>Nee
-						<input required type="radio" name="kinderen" value="kinderen-nee">
+						<input required type="radio" name="kinderen" value="kinderen-nee" id="kinderen-nee" title="Vul 1 van deze antwoorden in om verder te gaan">
 						<span class="checkmark"></span>
 					</label>
+					<p class="error" id="error-kinderen-nee"></p>
 				</fieldset>
+
+
 
 
 				<fieldset class="e">
@@ -53,6 +76,18 @@
 						<input type="radio" name="kinderen-overleden" value="kinderen-overleden-nee">
 						<span class="checkmark"></span>
 					</label>
+						<details>
+						<summary>Aanvullende informatie: Is 1 van deze kinderen eerder overleden dan de overleden ouder en had dit overleden kind zelf kinderen?<img src="img/info.svg" alt="info"></summary>
+							De echtgenoot of geregistreerde partner en de kinderen
+							van de overledene komen als 1e in aanmerking om
+							van de overledene te erven. Maar als 1 van de kinderen
+							al eerder is overleden, kan diens deel van de erfenis
+							naar diens kinderen gaan. Dit heet plaatsvervulling.
+							Het gaat dan dus om de kleinkinderen van de overledene
+							voor wie u nu aangifte doet. In dat geval geeft u in de
+							aangifte de kleinkinderen van de overledene op als
+							verkrijger.
+					</details>
 				</fieldset>
 				
 				<fieldset class="f">
@@ -66,6 +101,10 @@
 						<span class="checkmark"></span>
 					</label>
 				</fieldset>
+				<label class="for-later">Sla op en ga later verder
+					<input type="radio" value="sla-op">
+				</label>
+				<mark></mark>
 				<input type="submit" value="Volgende">
 			</fieldset>
 		</form>

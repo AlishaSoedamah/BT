@@ -330,6 +330,7 @@ mark {
 	padding: 10px !important;
 	margin: 10px;
 	border-radius: 5px;
+	width: 200px;
 	input {
 		display: none;
 	}
@@ -357,12 +358,24 @@ body:has([value="sla-op"]:checked) mark::after {
 	display: none;
 }
 
+body:has([value="show-input-to-fix"]:checked) .change-answers {
+  display: block;
+}
+
+
 @keyframes --pop-in {
 	0% {
 		scale: 0.5;
 	}
 	100% {
 		scale: 1;
+	}
+}
+
+@media (min-width: 640px) {
+	form {
+		width: 600px;
+		padding: 0 25px;
 	}
 }
 

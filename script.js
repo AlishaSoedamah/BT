@@ -1,5 +1,10 @@
-deathdate.max = new Date().toISOString().split('T')[0];
+// Source - https://stackoverflow.com/a/49916376
+// Posted by Lahiru Jayakody, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-03-17, License - CC BY-SA 4.0
+// deathdate.max = new Date().toISOString().split('T')[0];
+// const allDates = document.querySelectorAll('date');
 
+//Victor
 const form = document.querySelector('form');
 const inputs = document.querySelectorAll('input');
 

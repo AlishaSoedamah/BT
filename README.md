@@ -280,3 +280,8 @@ form.addEventListener('submit', (event) => {
 [print stylesheet](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Printing)
 [remove arrows from input](https://stackoverflow.com/a/4298216)
 [custom radio btn](https://www.w3schools.com/howto/howto_css_custom_checkbox.asp)
+[local storage](https://www.youtube.com/watch?v=fYTTUBa-lPc)
+[Set date input field's max date to today (eerste antwoord)](https://stackoverflow.com/questions/32378590/set-date-input-fields-max-date-to-today)
+[regExp chars](https://www.w3schools.com/jsref/jsref_regexp_not_0-9.asp)
+[inputmode](https://www.w3schools.com/TAgs/att_inputmode.asp)
+[set a date as initial state](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/date)

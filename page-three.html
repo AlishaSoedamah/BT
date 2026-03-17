@@ -30,12 +30,16 @@
 					<legend>Testament</legend>
 					<p>Stap 3 van de 4</p>
 					<details>
-							<summary>Hoe is geregeld wie iets krijgt?<img src="img/info.svg" alt="info"></summary>
-							Is er een testament? Dan staat daarin wie de verkrijgers zijn
-							en hoe zij de erfenis moeten verdelen.
-							Is er geen testament? Dan bepaalt het erfrecht wie de erfgenamen zijn.
-							<a href="#">meer info</a>
-						</details>
+						<summary>Hoe is geregeld wie iets krijgt?<img src="img/info.svg" alt="info"></summary>
+						Is er een testament? Dan staat daarin wie de verkrijgers zijn
+						en hoe zij de erfenis moeten verdelen.
+						Is er geen testament? Dan bepaalt het erfrecht wie de erfgenamen zijn.
+						<a href="#">meer info</a>
+						
+					</details>
+
+					
+					
 					<fieldset>
 						<legend>Had de overledene een testament?</legend>
 						<label>Ja
@@ -44,27 +48,30 @@
 						</label>
 							
 						<label>Nee
-							<input required type="radio" name="overledene-testament" value="overledene-testament-nee">
+							<input required type="radio" name="overledene-testament" id="overledene-testament-nee" value="overledene-testament-nee" title="Vul 1 van deze antwoorden in om verder te gaan">
 							<span class="checkmark"></span>
 						</label>
+						<p class="error" id="error-overledene-testament-nee"></p>
 					</fieldset>
 					<fieldset class="g">
 						<legend>Gegevens notaris</legend>
 						<label for="protocolnummer">Protocolnummer notaris</label>
-						<input required id="protocolnummer" type="text" title="Voornaam is incorrect">
-						<p class="error"></p>
+						<input required type="number" id="protocolnummer" name="protocolnummer" title="Protocolnummer is incorrect">
+						<p class="error" id="error-protocolnummer"></p>
 						<div class="three-col">
 							<div>
-								<label for="protocolnummer-voorletters">Voorletter(s)</label>
-								<input required type="text" id="protocolnummer-voorletters" name="naam">
+								<label for="notaris-voorletters">Voorletter(s)</label>
+								<input required type="text" id="notaris-voorletters" name="notaris-voorletters" title="Voorletters zijn incorrect">
+								<p class="error" id="error-notaris-voorletters"></p>
 							</div>
 							<div>
-								<label for="protocolnummer">Tussenvoegsel(s)</label>
-								<input required type="text" id="erf1-tussen" name="tussen">
+								<label for="notaris-tussen">Tussenvoegsel(s)</label>
+								<input required type="text" id="notaris-tussen" name="tussen">
 							</div>
 							<div>
-								<label for="protocolnummer">Achternaam</label>
-								<input required type="text" id="achternaam" name="achternaam">
+								<label for="notaris-achternaam">Achternaam</label>
+								<input required type="text" id="notaris-achternaam" name="notaris-achternaam" title="Achternaam is incorrect">
+								<p class="error" id="error-notaris-achternaam"></p>
 							</div>
 						</div>
 						<label>Vestigingsplaats</label>
@@ -83,29 +90,25 @@
 				<label>Bsn/RSIN gemachtigde
 					<input required type="radio" name="pattern-two">
 					<span class="checkmark"></span>
+					<input required type="number" name="bsn">
 				</label>
 				<label>Beconnummer adviseur
 					<input required type="radio" name="pattern-two">
-						<span class="checkmark"></span>
+					<span class="checkmark"></span>
+					<input required type="number">
 				</label>
 				<label> Protocolnummer notaris
 					<input required type="radio" name="pattern-two">
 					<span class="checkmark"></span>
+					<input required type="number" name="Beconnummer">
 				</label>
-				<!-- <div class="three-col">
-					<div>
-						<label>Bsn/RSIN gemachtigde</label>
-						<input required type="number" name="bsn">
-					</div>
-					<div>
-						<label>Beconnummer adviseur</label>
-						<input required type="number">
-					</div>
-					<div>
-						<label>Beconnummer adviseur</label>
-						<input required type="number" name="Beconnummer">
-					</div>
-				</div> -->
+
+
+
+				<label class="for-later">Sla op en ga later verder
+					<input type="radio" value="sla-op">
+				</label>
+				<mark></mark>
 				<input type="submit" value="Volgende">
 			</fieldset>
 		</form>
