@@ -16,18 +16,24 @@ inputs.forEach(input => {
 			{
 				if (error)
 				{
-					error.textContent = "Veld is leeg";
+					error.textContent = "Voornaam is incorrect";
 					input.setAttribute('aria-describedby', "error-" + input.id);
 				}
 		}
+		// else if (input.validity.valueMissing)
+		// {
+		// 	if (error)
+		// 		{
+		// 			error.textContent = "Dit veld is verplicht";
+		// 			input.setAttribute('aria-describedby', "error-" + input.id);
+		// 		}
+		// }
 		else {
 			if (error)
 			{
-				input.removeAttribute('aria-describeby');
+				input.removeAttribute('aria-describedby');
 				error.textContent = "";
 			}
 		}
 	})
 });
-
-

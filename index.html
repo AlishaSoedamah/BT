@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/steps.css">
 	<link rel="stylesheet" href="styles/steps1.css">
+	<link href="styles/print.css" media="print" rel="stylesheet" />
 </head>
 <body>
 	<header>
@@ -29,14 +30,15 @@
 			</nav>
 			<fieldset>
 				<legend>Gegevens van de overledene</legend>
+				<p>Stap 1 van de 4</p>
 				<div class="three-col">
 					<div>
-						<label for="ov-naam">Voorletter(s)</label>
+						<label for="ov-naam">Voorletters</label>
 						<input required pattern="[A-Za-z.]+" type="text" id="ov-naam" name="ov-naam">
 						<p class="error" id="error-ov-naam"></p>
 					</div>
 					<div>
-						<label for="ov-tussen">Tussenvoegsel(s)</label>
+						<label for="ov-tussen">Tussenvoegsels</label>
 						<input pattern="[A-Za-z]+" type="text" id="ov-tussen" name="tussen">
 						<p class="errortwo"></p>
 					</div>
@@ -64,10 +66,14 @@
 				<fieldset>
 					<legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?<span class="tooltip">
 						<img src="img/info.svg" alt="info">
-						<!-- <span class="tooltiptext">Echtgenoot of geregistreerde partner zijn, is niet hetzelfde als:
-							Samenwonen met een notarieel samenlevingscontract of
-							samen met een huisgenoot op hetzelfde adres staan ingeschreven in de Basisregistratie Personen (BRP) van de gemeente
-						</span> -->
+						<label for="">
+							<input type="checkbox" name="info-geregistreerde-partner">
+							<div class="info">
+								Echtgenoot of geregistreerde partner zijn, is niet hetzelfde als:
+								Samenwonen met een notarieel samenlevingscontract of
+								samen met een huisgenoot op hetzelfde adres staan ingeschreven in de Basisregistratie Personen (BRP) van de gemeente
+							</div>
+						</label>
 					</span></legend>
 					<label>
 						Ja
