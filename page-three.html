@@ -74,10 +74,12 @@
 								<p class="error" id="error-notaris-achternaam"></p>
 							</div>
 						</div>
-						<label>Vestigingsplaats</label>
-						<input required type="text">
+						<label for="vestigingsplaats">Vestigingsplaats</label>
+						<input required type="text" id="vestigingsplaats" name="vestigingsplaats" title="Vestigingsplaats is incorrect">
+						<p class="error" id="error-vestigingsplaats"></p>
 						<label for="testament-datum">Datum van het testament of van de laatste wijziging</label>
-						<input required type="date" id="testament-datum">
+						<input required type="date" id="testament-datum"  name="testament-datum" title="Datum van het Testament is incorrect">
+						<p class="error" id="error-testament-datum"></p>
 					</fieldset>
 			</fieldset>
 
@@ -106,7 +108,7 @@
 
 
 				<input type="submit" value="Volgende">
-				<label class="for-later">Sla op en ga later verder
+				<label class="for-later">Sla op voor later
 					<input type="radio" value="sla-op">
 				</label>
 				<mark></mark>

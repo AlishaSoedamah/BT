@@ -19,7 +19,7 @@
 
 body {
 	color: var(--ns-blue);
-	line-height: 200%;
+	line-height: 230%;
 }
 
 header {
@@ -109,7 +109,7 @@ legend {
 }
 
 
-:user-valid:not([value="submit"]) {
+input:not([type="submit"]):user-valid {
 	border-bottom: 2px solid var(--valid);
 	background-image: url(../img/Green-check-mark.png);
 	background-repeat: no-repeat;
@@ -311,8 +311,10 @@ mark {
 }
 
 .card {
-	background-color: var(--ns-yellow);
-	padding: 20px;
+	background-color: #05a88737;
+	margin-top: 100px;
+	padding: 60px;
+	line-height: 40px;
 }
 
 .error {
@@ -332,7 +334,21 @@ mark {
 	background-color: var(--white);
 	color: var(--btn);
 	outline: 2px var(--btn) solid;
-	padding: 15px 10px !important;
+	padding: 15px !important;
+	border-radius: 5px;
+	width: 148px;
+	font-size: 16px;
+	align-items: center;
+	input {
+		display: none;
+	}
+}
+
+.pas-aan {
+	background-color: var(--white);
+	color: var(--btn);
+	outline: 2px var(--btn) solid;
+	padding: 15px !important;
 	border-radius: 5px;
 	width: 200px;
 	font-size: 16px;
@@ -341,7 +357,6 @@ mark {
 		display: none;
 	}
 }
-
 body:has([value="sla-op"]:checked) mark::after {
   content: "Uw antwoorden zijn opgeslagen!";
   background-color: #05a88737;
@@ -367,6 +382,10 @@ body:has([value="show-input-to-fix"]:checked) .change-answers {
 }
 
 @media (min-width: 640px) {
+	h1 {
+		line-height: 300%;
+	}
+
 	body {
 		line-height: 145%;
 	}
