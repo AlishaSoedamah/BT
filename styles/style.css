@@ -177,6 +177,7 @@ input[type=number] {
 }
 
 footer {
+	padding: 20px;
 	background-color: var(--white);
 	color: var(--btn);
 }

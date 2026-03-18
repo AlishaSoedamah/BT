@@ -90,12 +90,12 @@
 				<legend>Gegevens gemachtigde</legend>
 				<p>Vul 1 van de 3 in: het bsn of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris.</p>
 				<label>Bsn/RSIN gemachtigde
-					<input required type="radio" value="gemachtigde-bsn" name="pattern-two">
+					<input required type="radio" pattern="[0-9]{9}" value="gemachtigde-bsn" name="pattern-two">
 					<span class="checkmark"></span>
 				</label>
-				<input required type="number" name="bsn" id="show-bsn-input">
+				<input required type="number" pattern="[0-9]{6}" name="bsn" id="show-bsn-input">
 				<label>Beconnummer adviseur
-					<input required type="radio" value="gemachtigde-beconnummer" name="pattern-two">
+					<input required type="radio" pattern="[0-9]{6}" value="gemachtigde-beconnummer" name="pattern-two">
 					<span class="checkmark"></span>
 				</label>
 				<input required type="number" id="show-beconnummer-input">
